@@ -1,160 +1,196 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="100%" height="100%">
   <defs>
-    <!-- Background Canvas -->
-    <linearGradient id="p-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d10" />
-      <stop offset="100%" stop-color="#0b1313" />
-    </linearGradient>
+    <!-- Soft card drop shadow for ivory canvas -->
+    <filter id="card-shadow" x="-4%" y="-6%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="3" flood-color="#1C1917" flood-opacity="0.05" />
+    </filter>
 
-    <!-- Card Background -->
-    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f191b" />
-      <stop offset="100%" stop-color="#0b1314" />
-    </linearGradient>
-
-    <!-- Card Border -->
-    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.1" />
-    </linearGradient>
+    <!-- Clip path for card rounded corners on left accent strip -->
+    <clipPath id="card-clip">
+      <rect width="396" height="140" rx="10" />
+    </clipPath>
   </defs>
 
   <style>
-    .section-tag {
+    .header-tag {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 2px;
-      fill: #10b981;
+      letter-spacing: 1.8px;
+      fill: #D97706;
+      text-transform: uppercase;
     }
-    .section-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    .header-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 20px;
       font-weight: 800;
       letter-spacing: -0.3px;
-      fill: #ffffff;
+      fill: #1C1917;
     }
-    .proj-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    .header-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      fill: #78716C;
+    }
+    .title-pine {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 15px;
       font-weight: 700;
-      fill: #34d399;
+      letter-spacing: -0.2px;
+      fill: #064E3B;
+    }
+    .title-amber {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      fill: #D97706;
     }
     .proj-desc {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 12.5px;
-      line-height: 1.5;
-      fill: #94a3b8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      fill: #44403C;
     }
-    .tag-label {
-      font-family: ui-monospace, monospace;
-      font-size: 10px;
+    .tag-pine {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 10.5px;
       font-weight: 600;
-      fill: #a7f3d0;
+      fill: #064E3B;
     }
-    .repo-icon {
-      fill: #10b981;
+    .tag-amber {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 10.5px;
+      font-weight: 600;
+      fill: #92400E;
+    }
+    .link-icon {
+      stroke: #A8A29E;
+      stroke-width: 1.3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .emoji {
+      font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+      font-size: 14px;
     }
   </style>
 
-  <!-- Base Canvas -->
-  <rect width="880" height="390" rx="16" fill="url(#p-bg)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.3" />
+  <!-- Canvas Background -->
+  <rect width="880" height="560" rx="14" fill="#F9F6F0" stroke="#D6D3CE" stroke-width="1.2" />
 
-  <!-- Section Header -->
-  <g transform="translate(36, 32)">
-    <text x="0" y="0" class="section-tag">ENGINEERING ARTIFACTS // CURATED</text>
-    <text x="0" y="24" class="section-title">Featured Research &amp; Open-Source Projects</text>
+  <!-- Header Section -->
+  <g transform="translate(38, 0)">
+    <text x="0" y="33" class="header-tag">ENGINEERING &amp; RESEARCH ARTIFACTS</text>
+    <text x="0" y="55" class="header-title">Featured Repositories</text>
+    <text x="0" y="72" class="header-subtitle">A curated selection across AI research and production engineering</text>
   </g>
 
-  <!-- ================= CARD 1: 500-AI-Agents-Projects (Top Left) ================= -->
-  <g transform="translate(36, 80)">
-    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
-    <!-- Indicator Bar -->
-    <rect x="0" y="0" width="4" height="135" rx="2" fill="#10b981" />
-
-    <g transform="translate(20, 22)">
-      <!-- Repo Icon & Title -->
-      <text x="0" y="0" class="proj-title">🤖 500-AI-Agents-Projects</text>
-      <!-- Description -->
-      <text x="0" y="22" class="proj-desc">Curated architectural showcase of autonomous AI agent</text>
-      <text x="0" y="38" class="proj-desc">workflows, memory patterns, and production use cases.</text>
-      <!-- Tags -->
-      <g transform="translate(0, 56)">
-        <rect width="64" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="8" y="15" class="tag-label">Python</text>
-
-        <rect x="72" y="0" width="82" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="80" y="15" class="tag-label">AI Agents</text>
-
-        <rect x="162" y="0" width="88" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="170" y="15" class="tag-label">LLM Swarms</text>
-      </g>
-    </g>
+  <!-- ================= ROW 1 ================= -->
+  <!-- Card 1: eeg_seizure_detection (Top Left) -->
+  <g transform="translate(38, 85)">
+    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
+    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
+    <text x="20" y="28" class="title-pine"><tspan class="emoji">🧠</tspan><tspan dx="7">eeg_seizure_detection</tspan></text>
+    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
+    <text x="20" y="52" class="proj-desc">Deep learning models for automated epileptic seizure</text>
+    <text x="20" y="68" class="proj-desc">detection from multi-channel EEG brainwave recordings.</text>
+    <!-- Tags -->
+    <rect x="20" y="98" width="54" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="47" y="113" text-anchor="middle" class="tag-pine">Python</text>
+    <rect x="82" y="98" width="38" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="101" y="113" text-anchor="middle" class="tag-pine">EEG</text>
+    <rect x="128" y="98" width="98" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="177" y="113" text-anchor="middle" class="tag-pine">Deep Learning</text>
   </g>
 
-  <!-- ================= CARD 2: hostalgrid-plus-plus (Top Right) ================= -->
-  <g transform="translate(450, 80)">
-    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
-    <rect x="0" y="0" width="4" height="135" rx="2" fill="#34d399" />
-
-    <g transform="translate(20, 22)">
-      <text x="0" y="0" class="proj-title">⚡ hostalgrid-plus-plus</text>
-      <text x="0" y="22" class="proj-desc">Computational modeling and analytical frameworks for</text>
-      <text x="0" y="38" class="proj-desc">algorithmic grid resource allocation and optimization.</text>
-      <g transform="translate(0, 56)">
-        <rect width="70" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="8" y="15" class="tag-label">Jupyter</text>
-
-        <rect x="78" y="0" width="94" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="86" y="15" class="tag-label">Optimization</text>
-
-        <rect x="180" y="0" width="76" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="188" y="15" class="tag-label">Systems</text>
-      </g>
-    </g>
+  <!-- Card 2: gpt2_interpretability_research (Top Right) -->
+  <g transform="translate(446, 85)">
+    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
+    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
+    <text x="20" y="28" class="title-pine"><tspan class="emoji">🔬</tspan><tspan dx="7">gpt2_interpretability_research</tspan></text>
+    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
+    <text x="20" y="52" class="proj-desc">Mechanistic interpretability research on GPT-2 transformer</text>
+    <text x="20" y="68" class="proj-desc">internals — probing attention heads and activation patterns.</text>
+    <!-- Tags -->
+    <rect x="20" y="98" width="54" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="47" y="113" text-anchor="middle" class="tag-pine">Python</text>
+    <rect x="82" y="98" width="38" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="101" y="113" text-anchor="middle" class="tag-pine">XAI</text>
+    <rect x="128" y="98" width="96" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="176" y="113" text-anchor="middle" class="tag-pine">Transformers</text>
   </g>
 
-  <!-- ================= CARD 3: MOSIP1 (Bottom Left) ================= -->
-  <g transform="translate(36, 230)">
-    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
-    <rect x="0" y="0" width="4" height="135" rx="2" fill="#10b981" />
-
-    <g transform="translate(20, 22)">
-      <text x="0" y="0" class="proj-title">🛡️ MOSIP1</text>
-      <text x="0" y="22" class="proj-desc">Scalable TypeScript implementation and systems</text>
-      <text x="0" y="38" class="proj-desc">integration for national-scale open digital identity.</text>
-      <g transform="translate(0, 56)">
-        <rect width="84" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="8" y="15" class="tag-label">TypeScript</text>
-
-        <rect x="92" y="0" width="102" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="100" y="15" class="tag-label">Digital Identity</text>
-
-        <rect x="202" y="0" width="80" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="210" y="15" class="tag-label">Architecture</text>
-      </g>
-    </g>
+  <!-- ================= ROW 2 ================= -->
+  <!-- Card 3: 500-AI-Agents-Projects (Middle Left) -->
+  <g transform="translate(38, 237)">
+    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
+    <rect x="0" y="0" width="4" height="140" fill="#D97706" clip-path="url(#card-clip)" />
+    <text x="20" y="28" class="title-amber"><tspan class="emoji">🤖</tspan><tspan dx="7">500-AI-Agents-Projects</tspan></text>
+    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
+    <text x="20" y="52" class="proj-desc">Curated industrial showcase of autonomous AI agent</text>
+    <text x="20" y="68" class="proj-desc">architectures, workflows, and production design patterns.</text>
+    <!-- Tags -->
+    <rect x="20" y="98" width="54" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
+    <text x="47" y="113" text-anchor="middle" class="tag-amber">Python</text>
+    <rect x="82" y="98" width="74" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
+    <text x="119" y="113" text-anchor="middle" class="tag-amber">AI Agents</text>
+    <rect x="164" y="98" width="46" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
+    <text x="187" y="113" text-anchor="middle" class="tag-amber">LLMs</text>
   </g>
 
-  <!-- ================= CARD 4: Algo-Tree (Bottom Right) ================= -->
-  <g transform="translate(450, 230)">
-    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
-    <rect x="0" y="0" width="4" height="135" rx="2" fill="#059669" />
+  <!-- Card 4: hostalgrid-plus-plus (Middle Right) -->
+  <g transform="translate(446, 237)">
+    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
+    <rect x="0" y="0" width="4" height="140" fill="#D97706" clip-path="url(#card-clip)" />
+    <text x="20" y="28" class="title-amber"><tspan class="emoji">⚡</tspan><tspan dx="7">hostalgrid-plus-plus</tspan></text>
+    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
+    <text x="20" y="52" class="proj-desc">Computational models and algorithmic frameworks for</text>
+    <text x="20" y="68" class="proj-desc">grid resource allocation and optimization.</text>
+    <!-- Tags -->
+    <rect x="20" y="98" width="60" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
+    <text x="50" y="113" text-anchor="middle" class="tag-amber">Jupyter</text>
+    <rect x="88" y="98" width="80" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
+    <text x="128" y="113" text-anchor="middle" class="tag-amber">Algorithms</text>
+    <rect x="176" y="98" width="92" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
+    <text x="222" y="113" text-anchor="middle" class="tag-amber">Optimization</text>
+  </g>
 
-    <g transform="translate(20, 22)">
-      <text x="0" y="0" class="proj-title">🌳 Algo-Tree</text>
-      <text x="0" y="22" class="proj-desc">Foundational data structures, algorithmic paradigms,</text>
-      <text x="0" y="38" class="proj-desc">and high-efficiency software engineering patterns.</text>
-      <g transform="translate(0, 56)">
-        <rect width="46" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="8" y="15" class="tag-label">C++</text>
+  <!-- ================= ROW 3 ================= -->
+  <!-- Card 5: MOSIP1 (Bottom Left) -->
+  <g transform="translate(38, 389)">
+    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
+    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
+    <text x="20" y="28" class="title-pine"><tspan class="emoji">🛡️</tspan><tspan dx="7">MOSIP1</tspan></text>
+    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
+    <text x="20" y="52" class="proj-desc">Scalable TypeScript systems integration for national-scale</text>
+    <text x="20" y="68" class="proj-desc">open digital identity infrastructure.</text>
+    <!-- Tags -->
+    <rect x="20" y="98" width="78" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="59" y="113" text-anchor="middle" class="tag-pine">TypeScript</text>
+    <rect x="106" y="98" width="62" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="137" y="113" text-anchor="middle" class="tag-pine">Systems</text>
+    <rect x="176" y="98" width="60" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="206" y="113" text-anchor="middle" class="tag-pine">Identity</text>
+  </g>
 
-        <rect x="54" y="0" width="112" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="62" y="15" class="tag-label">Data Structures</text>
-
-        <rect x="174" y="0" width="90" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
-        <text x="182" y="15" class="tag-label">Performance</text>
-      </g>
-    </g>
+  <!-- Card 6: MedMitra (Bottom Right) -->
+  <g transform="translate(446, 389)">
+    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
+    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
+    <text x="20" y="28" class="title-pine"><tspan class="emoji">🏥</tspan><tspan dx="7">MedMitra</tspan></text>
+    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
+    <text x="20" y="52" class="proj-desc">Full-stack medical AI assistant — bridging clinical</text>
+    <text x="20" y="68" class="proj-desc">intelligence with accessible healthcare technology.</text>
+    <!-- Tags -->
+    <rect x="20" y="98" width="74" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="57" y="113" text-anchor="middle" class="tag-pine">Full-Stack</text>
+    <rect x="102" y="98" width="98" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="151" y="113" text-anchor="middle" class="tag-pine">Healthcare AI</text>
+    <rect x="208" y="98" width="78" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="247" y="113" text-anchor="middle" class="tag-pine">Production</text>
   </g>
 </svg>

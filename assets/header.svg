@@ -1,163 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d10" />
-      <stop offset="45%" stop-color="#0c1614" />
-      <stop offset="100%" stop-color="#0a1914" />
-    </linearGradient>
-
-    <!-- Border Gradient -->
-    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#34d399" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.5" />
-    </linearGradient>
-
-    <!-- Glow Radial -->
-    <radialGradient id="emerald-glow" cx="80%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
-      <stop offset="50%" stop-color="#10b981" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
-    </radialGradient>
-
-    <radialGradient id="corner-glow" cx="10%" cy="90%" r="40%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#10b981" stroke-width="0.7" stroke-opacity="0.07" />
+    <pattern id="warm-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#D6D3CE" stroke-width="0.75" stroke-opacity="0.45" />
     </pattern>
+    <radialGradient id="header-warm-glow" cx="82%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#F9F6F0" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#F9F6F0" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="header-pine-glow" cx="15%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#ECFDF5" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#F9F6F0" stop-opacity="0" />
+    </radialGradient>
   </defs>
 
   <style>
-    .title {
+    .badge-text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 0.9px;
+      fill: #FFFFFF;
+    }
+    .title-text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-weight: 800;
-      font-size: 42px;
+      font-size: 38px;
       letter-spacing: -0.5px;
-      fill: #ffffff;
+      fill: #1C1917;
     }
-    .subtitle {
+    .subtitle-text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      letter-spacing: 0.2px;
-      fill: #34d399;
-    }
-    .badge-text {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-weight: 600;
-      font-size: 11px;
-      letter-spacing: 1px;
-      fill: #a7f3d0;
+      font-size: 15.5px;
+      letter-spacing: 0.2px;
+      fill: #064E3B;
     }
-    .tag-text {
+    .pill-pine-text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 500;
-      font-size: 12px;
-      fill: #cbd5e1;
+      font-weight: 600;
+      font-size: 11.5px;
+      fill: #064E3B;
     }
-    .status-dot {
-      animation: pulse 2.5s infinite;
-    }
-    @keyframes pulse {
-      0% { opacity: 0.4; }
-      50% { opacity: 1; }
-      100% { opacity: 0.4; }
+    .pill-amber-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 11.5px;
+      fill: #92400E;
     }
   </style>
 
-  <!-- Background Base -->
-  <rect width="900" height="300" rx="16" fill="url(#bg-gradient)" />
-  <rect width="900" height="300" rx="16" fill="url(#grid)" />
-  
-  <!-- Ambient Glow Orbs -->
-  <rect width="900" height="300" rx="16" fill="url(#emerald-glow)" />
-  <rect width="900" height="300" rx="16" fill="url(#corner-glow)" />
+  <rect width="900" height="280" rx="14" fill="#F9F6F0" />
+  <rect width="900" height="280" rx="14" fill="url(#header-warm-glow)" />
+  <rect width="900" height="280" rx="14" fill="url(#header-pine-glow)" />
+  <rect width="900" height="280" rx="14" fill="url(#warm-grid)" />
+  <rect x="0.75" y="0.75" width="898.5" height="278.5" rx="13.25" fill="none" stroke="#D6D3CE" stroke-width="1.5" />
+  <line x1="16" y1="279" x2="884" y2="279" stroke="#064E3B" stroke-width="2" stroke-opacity="0.2" stroke-linecap="round" />
 
-  <!-- Outer Glass Border -->
-  <rect x="1" y="1" width="898" height="298" rx="15" fill="none" stroke="url(#border-grad)" stroke-width="1.5" />
-
-  <!-- Status Pill (Top Left) -->
-  <g transform="translate(50, 42)">
-    <rect width="215" height="28" rx="14" fill="#062d22" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
-    <circle cx="16" cy="14" r="4.5" fill="#10b981" class="status-dot">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+  <g transform="translate(46, 36)">
+    <rect width="278" height="28" rx="14" fill="#064E3B" />
+    <circle cx="16" cy="14" r="4" fill="#D97706" />
+    <circle cx="16" cy="14" r="7" fill="#D97706" opacity="0.3">
+      <animate attributeName="r" values="5;8.5;5" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.5s" repeatCount="indefinite" />
     </circle>
-    <circle cx="16" cy="14" r="8" fill="#10b981" opacity="0.2">
-      <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
-    </circle>
-    <text x="32" y="18" class="badge-text">AI ENGINEER &amp; RESEARCHER</text>
+    <text x="30" y="18" class="badge-text">AI ENGINEER &amp; RESEARCH SCIENTIST</text>
   </g>
 
-  <!-- Main Headline -->
-  <text x="50" y="125" class="title">ANSHU TIWARI</text>
+  <text x="46" y="118" class="title-text">ANSHU TIWARI</text>
+  <text x="46" y="152" class="subtitle-text">Building Intelligent Systems · Decoding Neural Signals</text>
 
-  <!-- Subtitle -->
-  <text x="50" y="160" class="subtitle">Architecting Autonomous Systems, Neural Models &amp; Intelligent Agents</text>
-
-  <!-- Tech Focus Badges (Bottom Left) -->
-  <g transform="translate(50, 205)">
-    <!-- Pill 1 -->
-    <rect x="0" y="0" width="135" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
-    <text x="14" y="20" class="tag-text">⬡ Autonomous Agents</text>
-
-    <!-- Pill 2 -->
-    <rect x="145" y="0" width="138" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
-    <text x="159" y="20" class="tag-text">🧠 Large Models &amp; NLP</text>
-
-    <!-- Pill 3 -->
-    <rect x="293" y="0" width="135" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
-    <text x="307" y="20" class="tag-text">⚡ Scalable Systems</text>
-
-    <!-- Pill 4 -->
-    <rect x="438" y="0" width="125" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
-    <text x="452" y="20" class="tag-text">🔬 AI Research</text>
+  <g transform="translate(46, 192)">
+    <rect width="202" height="32" rx="16" fill="#ECFDF5" stroke="#064E3B" stroke-width="1" stroke-opacity="0.25" />
+    <text x="14" y="20.5" class="pill-pine-text"><tspan>🧠</tspan><tspan dx="6">EEG &amp; ECG Deep Learning</tspan></text>
   </g>
 
-  <!-- Architectural Neural Constellation Graph (Right Side) -->
-  <g transform="translate(620, 25)" opacity="0.9">
-    <!-- Outer Decorative Orbit Ring -->
-    <circle cx="130" cy="120" r="110" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="4 6" />
-    <circle cx="130" cy="120" r="75" fill="none" stroke="#34d399" stroke-width="1" stroke-opacity="0.2" />
+  <g transform="translate(258, 192)">
+    <rect width="170" height="32" rx="16" fill="#FFFBEB" stroke="#D97706" stroke-width="1" stroke-opacity="0.35" />
+    <text x="14" y="20.5" class="pill-amber-text"><tspan>🔬</tspan><tspan dx="6">Explainable AI (XAI)</tspan></text>
+  </g>
 
-    <!-- Connecting Network Lines -->
-    <line x1="130" y1="120" x2="60" y2="70" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
-    <line x1="130" y1="120" x2="200" y2="75" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
-    <line x1="130" y1="120" x2="80" y2="185" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
-    <line x1="130" y1="120" x2="195" y2="175" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
-    <line x1="60" y1="70" x2="20" y2="120" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
-    <line x1="200" y1="75" x2="235" y2="135" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
-    <line x1="80" y1="185" x2="140" y2="225" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
-    <line x1="195" y1="175" x2="140" y2="225" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
-    <line x1="60" y1="70" x2="200" y2="75" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.2" stroke-dasharray="3 3" />
+  <g transform="translate(438, 192)">
+    <rect width="182" height="32" rx="16" fill="#ECFDF5" stroke="#064E3B" stroke-width="1" stroke-opacity="0.25" />
+    <text x="14" y="20.5" class="pill-pine-text"><tspan>🤖</tspan><tspan dx="6">Autonomous AI Agents</tspan></text>
+  </g>
 
-    <!-- Node Core Glow -->
-    <circle cx="130" cy="120" r="16" fill="#10b981" opacity="0.2" />
-    <circle cx="130" cy="120" r="8" fill="#10b981" />
-    <circle cx="130" cy="120" r="4" fill="#ecfdf5" />
+  <g transform="translate(630, 192)">
+    <rect width="168" height="32" rx="16" fill="#FFFBEB" stroke="#D97706" stroke-width="1" stroke-opacity="0.35" />
+    <text x="14" y="20.5" class="pill-amber-text"><tspan>⚡</tspan><tspan dx="6">Scalable ML Systems</tspan></text>
+  </g>
 
-    <!-- Peripheral Nodes -->
-    <circle cx="60" cy="70" r="6" fill="#34d399" />
-    <circle cx="60" cy="70" r="3" fill="#ffffff" />
+  <g transform="translate(640, 25)">
+    <circle cx="120" cy="80" r="70" fill="none" stroke="#D6D3CE" stroke-width="0.8" stroke-dasharray="4 4" stroke-opacity="0.6" />
+    <circle cx="120" cy="80" r="42" fill="none" stroke="#064E3B" stroke-width="0.8" stroke-dasharray="3 3" stroke-opacity="0.2" />
 
-    <circle cx="200" cy="75" r="5" fill="#34d399" />
-    <circle cx="200" cy="75" r="2.5" fill="#ffffff" />
+    <path d="M 10 80 L 45 80 L 53 73 L 59 87 L 66 54 L 74 104 L 80 77 L 86 83 L 92 80 L 115 80" 
+          fill="none" stroke="#D97706" stroke-width="1.4" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
 
-    <circle cx="80" cy="185" r="6" fill="#10b981" />
-    <circle cx="80" cy="185" r="3" fill="#ffffff" />
+    <line x1="45" y1="80" x2="80" y2="40" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.3" />
+    <line x1="45" y1="80" x2="70" y2="120" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.3" />
+    <line x1="80" y1="40" x2="120" y2="28" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.25" />
+    <line x1="80" y1="40" x2="120" y2="80" stroke="#064E3B" stroke-width="1.4" stroke-opacity="0.35" />
+    <line x1="70" y1="120" x2="120" y2="80" stroke="#064E3B" stroke-width="1.4" stroke-opacity="0.35" />
+    <line x1="70" y1="120" x2="135" y2="130" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.3" />
+    <line x1="120" y1="80" x2="165" y2="45" stroke="#064E3B" stroke-width="1.4" stroke-opacity="0.35" />
+    <line x1="120" y1="80" x2="135" y2="130" stroke="#064E3B" stroke-width="1.4" stroke-opacity="0.35" />
+    <line x1="120" y1="80" x2="185" y2="85" stroke="#064E3B" stroke-width="1.4" stroke-opacity="0.35" />
+    <line x1="165" y1="45" x2="205" y2="40" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.25" />
+    <line x1="165" y1="45" x2="185" y2="85" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.3" />
+    <line x1="185" y1="85" x2="135" y2="130" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.3" />
+    <line x1="185" y1="85" x2="205" y2="115" stroke="#064E3B" stroke-width="1.2" stroke-opacity="0.25" />
 
-    <circle cx="195" cy="175" r="5.5" fill="#34d399" />
-    <circle cx="195" cy="175" r="2.5" fill="#ffffff" />
+    <circle cx="45" cy="80" r="3.5" fill="#064E3B" opacity="0.6" />
+    <circle cx="80" cy="40" r="4.5" fill="#D97706" />
+    <circle cx="70" cy="120" r="4.5" fill="#064E3B" />
+    <circle cx="120" cy="28" r="3" fill="#D97706" opacity="0.8" />
+    <circle cx="135" cy="130" r="4" fill="#D97706" />
+    <circle cx="165" cy="45" r="4.5" fill="#064E3B" />
+    <circle cx="205" cy="40" r="2.5" fill="#064E3B" opacity="0.5" />
+    <circle cx="205" cy="115" r="3" fill="#D97706" opacity="0.7" />
 
-    <circle cx="20" cy="120" r="4" fill="#059669" />
-    <circle cx="235" cy="135" r="4" fill="#059669" />
-    <circle cx="140" cy="225" r="4.5" fill="#10b981" />
+    <circle cx="185" cy="85" r="5" fill="#D97706" />
+    <circle cx="185" cy="85" r="9" fill="none" stroke="#D97706" stroke-width="1" stroke-opacity="0.3" />
 
-    <!-- Mini Label on Central Node -->
-    <text x="130" y="152" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#6ee7b7" letter-spacing="1">ARCH // CORE</text>
+    <circle cx="120" cy="80" r="14" fill="#ECFDF5" stroke="#064E3B" stroke-width="1" stroke-opacity="0.2" />
+    <circle cx="120" cy="80" r="6.5" fill="#064E3B" />
+    <circle cx="120" cy="80" r="2.5" fill="#FFFBEB" />
   </g>
 </svg>
