@@ -1,196 +1,179 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="100%" height="100%">
   <defs>
-    <!-- Soft card drop shadow for ivory canvas -->
-    <filter id="card-shadow" x="-4%" y="-6%" width="108%" height="116%">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="3" flood-color="#1C1917" flood-opacity="0.05" />
-    </filter>
+    <!-- Background Canvas matching GitHub Dark Mode -->
+    <linearGradient id="proj-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
 
-    <!-- Clip path for card rounded corners on left accent strip -->
-    <clipPath id="card-clip">
-      <rect width="396" height="140" rx="10" />
+    <!-- Card Clip Path -->
+    <clipPath id="card-edge-clip">
+      <rect width="396" height="124" rx="8" />
     </clipPath>
   </defs>
 
   <style>
-    .header-tag {
+    .meta-tag {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.8px;
-      fill: #D97706;
-      text-transform: uppercase;
+      letter-spacing: 2px;
+      fill: #A1A1AA;
     }
-    .header-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 20px;
+    .main-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 21px;
       font-weight: 800;
       letter-spacing: -0.3px;
-      fill: #1C1917;
+      fill: #FAF5EE;
     }
-    .header-subtitle {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 0.1px;
-      fill: #78716C;
-    }
-    .title-pine {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    .card-title-research {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-size: 15px;
       font-weight: 700;
-      letter-spacing: -0.2px;
-      fill: #064E3B;
+      fill: #F59E0B;
     }
-    .title-amber {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    .card-title-eng {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-size: 15px;
       font-weight: 700;
-      letter-spacing: -0.2px;
-      fill: #D97706;
+      fill: #10B981;
     }
-    .proj-desc {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    .card-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-size: 12px;
-      line-height: 16px;
-      fill: #44403C;
+      fill: #A1A1AA;
+      line-height: 1.45;
     }
-    .tag-pine {
+    .tag-mono {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 10.5px;
+      font-size: 10px;
       font-weight: 600;
-      fill: #064E3B;
     }
-    .tag-amber {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 10.5px;
-      font-weight: 600;
-      fill: #92400E;
-    }
-    .link-icon {
-      stroke: #A8A29E;
-      stroke-width: 1.3;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+    .link-arrow {
+      stroke: #71717A;
+      stroke-width: 1.2;
       fill: none;
-    }
-    .emoji {
-      font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
-      font-size: 14px;
     }
   </style>
 
-  <!-- Canvas Background -->
-  <rect width="880" height="560" rx="14" fill="#F9F6F0" stroke="#D6D3CE" stroke-width="1.2" />
+  <!-- Base Canvas -->
+  <rect width="880" height="500" rx="10" fill="url(#proj-bg-dark)" stroke="#30363D" stroke-width="1" />
 
-  <!-- Header Section -->
-  <g transform="translate(38, 0)">
-    <text x="0" y="33" class="header-tag">ENGINEERING &amp; RESEARCH ARTIFACTS</text>
-    <text x="0" y="55" class="header-title">Featured Repositories</text>
-    <text x="0" y="72" class="header-subtitle">A curated selection across AI research and production engineering</text>
+  <!-- Section Header -->
+  <g transform="translate(36, 30)">
+    <text x="0" y="0" class="meta-tag">03 // SELECTED PRODUCTION &amp; RESEARCH REPOSITORIES</text>
+    <text x="0" y="24" class="main-title">Featured Technical Artifacts</text>
   </g>
 
   <!-- ================= ROW 1 ================= -->
   <!-- Card 1: eeg_seizure_detection (Top Left) -->
-  <g transform="translate(38, 85)">
-    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
-    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
-    <text x="20" y="28" class="title-pine"><tspan class="emoji">🧠</tspan><tspan dx="7">eeg_seizure_detection</tspan></text>
-    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
-    <text x="20" y="52" class="proj-desc">Deep learning models for automated epileptic seizure</text>
-    <text x="20" y="68" class="proj-desc">detection from multi-channel EEG brainwave recordings.</text>
-    <!-- Tags -->
-    <rect x="20" y="98" width="54" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="47" y="113" text-anchor="middle" class="tag-pine">Python</text>
-    <rect x="82" y="98" width="38" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="101" y="113" text-anchor="middle" class="tag-pine">EEG</text>
-    <rect x="128" y="98" width="98" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="177" y="113" text-anchor="middle" class="tag-pine">Deep Learning</text>
+  <g transform="translate(36, 76)">
+    <rect width="396" height="124" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="124" fill="#F59E0B" clip-path="url(#card-edge-clip)" />
+    <text x="18" y="26" class="card-title-research">eeg_seizure_detection</text>
+    <path d="M 368 16 L 376 16 M 376 16 L 376 24 M 376 16 L 370 22" class="link-arrow" />
+    <text x="18" y="48" class="card-desc">Deep learning models for automated epileptic seizure</text>
+    <text x="18" y="64" class="card-desc">detection from multi-channel EEG biological telemetry.</text>
+    <g transform="translate(18, 90)">
+      <rect width="56" height="20" rx="4" fill="#241B08" stroke="#F59E0B" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#FCD34D">Python</text>
+      <rect x="64" y="0" width="46" height="20" rx="4" fill="#241B08" stroke="#F59E0B" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#FCD34D">EEG</text>
+      <rect x="118" y="0" width="94" height="20" rx="4" fill="#241B08" stroke="#F59E0B" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#FCD34D">Deep Learning</text>
+    </g>
   </g>
 
-  <!-- Card 2: gpt2_interpretability_research (Top Right) -->
-  <g transform="translate(446, 85)">
-    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
-    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
-    <text x="20" y="28" class="title-pine"><tspan class="emoji">🔬</tspan><tspan dx="7">gpt2_interpretability_research</tspan></text>
-    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
-    <text x="20" y="52" class="proj-desc">Mechanistic interpretability research on GPT-2 transformer</text>
-    <text x="20" y="68" class="proj-desc">internals — probing attention heads and activation patterns.</text>
-    <!-- Tags -->
-    <rect x="20" y="98" width="54" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="47" y="113" text-anchor="middle" class="tag-pine">Python</text>
-    <rect x="82" y="98" width="38" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="101" y="113" text-anchor="middle" class="tag-pine">XAI</text>
-    <rect x="128" y="98" width="96" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="176" y="113" text-anchor="middle" class="tag-pine">Transformers</text>
+  <!-- Card 2: cornflakes-copilot- (Top Right) -->
+  <g transform="translate(448, 76)">
+    <rect width="396" height="124" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="124" fill="#10B981" clip-path="url(#card-edge-clip)" />
+    <text x="18" y="26" class="card-title-eng">cornflakes-copilot-</text>
+    <path d="M 368 16 L 376 16 M 376 16 L 376 24 M 376 16 L 370 22" class="link-arrow" />
+    <text x="18" y="48" class="card-desc">Autonomous SRE incident copilot — deterministic triage,</text>
+    <text x="18" y="64" class="card-desc">BM25 runbook RAG, chaos testing, exactly-once execution.</text>
+    <g transform="translate(18, 90)">
+      <rect width="70" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">AI Agents</text>
+      <rect x="78" y="0" width="60" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">FastAPI</text>
+      <rect x="146" y="0" width="94" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">Docker &bull; RAG</text>
+    </g>
   </g>
 
   <!-- ================= ROW 2 ================= -->
-  <!-- Card 3: 500-AI-Agents-Projects (Middle Left) -->
-  <g transform="translate(38, 237)">
-    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
-    <rect x="0" y="0" width="4" height="140" fill="#D97706" clip-path="url(#card-clip)" />
-    <text x="20" y="28" class="title-amber"><tspan class="emoji">🤖</tspan><tspan dx="7">500-AI-Agents-Projects</tspan></text>
-    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
-    <text x="20" y="52" class="proj-desc">Curated industrial showcase of autonomous AI agent</text>
-    <text x="20" y="68" class="proj-desc">architectures, workflows, and production design patterns.</text>
-    <!-- Tags -->
-    <rect x="20" y="98" width="54" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
-    <text x="47" y="113" text-anchor="middle" class="tag-amber">Python</text>
-    <rect x="82" y="98" width="74" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
-    <text x="119" y="113" text-anchor="middle" class="tag-amber">AI Agents</text>
-    <rect x="164" y="98" width="46" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
-    <text x="187" y="113" text-anchor="middle" class="tag-amber">LLMs</text>
+  <!-- Card 3: gpt2_interpretability_research (Mid Left) -->
+  <g transform="translate(36, 214)">
+    <rect width="396" height="124" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="124" fill="#F59E0B" clip-path="url(#card-edge-clip)" />
+    <text x="18" y="26" class="card-title-research">gpt2_interpretability_research</text>
+    <path d="M 368 16 L 376 16 M 376 16 L 376 24 M 376 16 L 370 22" class="link-arrow" />
+    <text x="18" y="48" class="card-desc">Mechanistic interpretability research on GPT-2 transformers</text>
+    <text x="18" y="64" class="card-desc">— probing attention heads, residual stream activations.</text>
+    <g transform="translate(18, 90)">
+      <rect width="44" height="20" rx="4" fill="#241B08" stroke="#F59E0B" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#FCD34D">XAI</text>
+      <rect x="52" y="0" width="90" height="20" rx="4" fill="#241B08" stroke="#F59E0B" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#FCD34D">Transformers</text>
+      <rect x="150" y="0" width="60" height="20" rx="4" fill="#241B08" stroke="#F59E0B" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#FCD34D">PyTorch</text>
+    </g>
   </g>
 
-  <!-- Card 4: hostalgrid-plus-plus (Middle Right) -->
-  <g transform="translate(446, 237)">
-    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
-    <rect x="0" y="0" width="4" height="140" fill="#D97706" clip-path="url(#card-clip)" />
-    <text x="20" y="28" class="title-amber"><tspan class="emoji">⚡</tspan><tspan dx="7">hostalgrid-plus-plus</tspan></text>
-    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
-    <text x="20" y="52" class="proj-desc">Computational models and algorithmic frameworks for</text>
-    <text x="20" y="68" class="proj-desc">grid resource allocation and optimization.</text>
-    <!-- Tags -->
-    <rect x="20" y="98" width="60" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
-    <text x="50" y="113" text-anchor="middle" class="tag-amber">Jupyter</text>
-    <rect x="88" y="98" width="80" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
-    <text x="128" y="113" text-anchor="middle" class="tag-amber">Algorithms</text>
-    <rect x="176" y="98" width="92" height="22" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="0.8" />
-    <text x="222" y="113" text-anchor="middle" class="tag-amber">Optimization</text>
+  <!-- Card 4: hostalgrid-plus-plus (Mid Right) -->
+  <g transform="translate(448, 214)">
+    <rect width="396" height="124" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="124" fill="#10B981" clip-path="url(#card-edge-clip)" />
+    <text x="18" y="26" class="card-title-eng">hostalgrid-plus-plus</text>
+    <path d="M 368 16 L 376 16 M 376 16 L 376 24 M 376 16 L 370 22" class="link-arrow" />
+    <text x="18" y="48" class="card-desc">Computational resource allocation modeling and grid</text>
+    <text x="18" y="64" class="card-desc">optimization algorithms for high-throughput computing.</text>
+    <g transform="translate(18, 90)">
+      <rect width="84" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">Optimization</text>
+      <rect x="92" y="0" width="80" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">Algorithms</text>
+      <rect x="180" y="0" width="60" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">Jupyter</text>
+    </g>
   </g>
 
   <!-- ================= ROW 3 ================= -->
   <!-- Card 5: MOSIP1 (Bottom Left) -->
-  <g transform="translate(38, 389)">
-    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
-    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
-    <text x="20" y="28" class="title-pine"><tspan class="emoji">🛡️</tspan><tspan dx="7">MOSIP1</tspan></text>
-    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
-    <text x="20" y="52" class="proj-desc">Scalable TypeScript systems integration for national-scale</text>
-    <text x="20" y="68" class="proj-desc">open digital identity infrastructure.</text>
-    <!-- Tags -->
-    <rect x="20" y="98" width="78" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="59" y="113" text-anchor="middle" class="tag-pine">TypeScript</text>
-    <rect x="106" y="98" width="62" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="137" y="113" text-anchor="middle" class="tag-pine">Systems</text>
-    <rect x="176" y="98" width="60" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="206" y="113" text-anchor="middle" class="tag-pine">Identity</text>
+  <g transform="translate(36, 352)">
+    <rect width="396" height="124" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="124" fill="#10B981" clip-path="url(#card-edge-clip)" />
+    <text x="18" y="26" class="card-title-eng">MOSIP1</text>
+    <path d="M 368 16 L 376 16 M 376 16 L 376 24 M 376 16 L 370 22" class="link-arrow" />
+    <text x="18" y="48" class="card-desc">Scalable TypeScript integration for national-scale open</text>
+    <text x="18" y="64" class="card-desc">digital identity architecture and modular services.</text>
+    <g transform="translate(18, 90)">
+      <rect width="80" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">TypeScript</text>
+      <rect x="88" y="0" width="60" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">Systems</text>
+      <rect x="156" y="0" width="60" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">Identity</text>
+    </g>
   </g>
 
-  <!-- Card 6: cornflakes-copilot- (Bottom Right) -->
-  <g transform="translate(446, 389)">
-    <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
-    <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
-    <text x="20" y="28" class="title-pine"><tspan class="emoji">🌽</tspan><tspan dx="7">cornflakes-copilot-</tspan></text>
-    <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
-    <text x="20" y="52" class="proj-desc">Autonomous SRE &amp; incident triage copilot — deterministic</text>
-    <text x="20" y="68" class="proj-desc">tools, BM25 runbook RAG, chaos tests &amp; self-healing.</text>
-    <!-- Tags -->
-    <rect x="20" y="98" width="65" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="52" y="113" text-anchor="middle" class="tag-pine">FastAPI</text>
-    <rect x="93" y="98" width="80" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="133" y="113" text-anchor="middle" class="tag-pine">AI Agents</text>
-    <rect x="181" y="98" width="95" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="228" y="113" text-anchor="middle" class="tag-pine">Docker &bull; RAG</text>
+  <!-- Card 6: RazorOps (Bottom Right) -->
+  <g transform="translate(448, 352)">
+    <rect width="396" height="124" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="124" fill="#10B981" clip-path="url(#card-edge-clip)" />
+    <text x="18" y="26" class="card-title-eng">razorops</text>
+    <path d="M 368 16 L 376 16 M 376 16 L 376 24 M 376 16 L 370 22" class="link-arrow" />
+    <text x="18" y="48" class="card-desc">Production-grade automated CI/CD pipeline automation,</text>
+    <text x="18" y="64" class="card-desc">containerized workflows, and build acceleration.</text>
+    <g transform="translate(18, 90)">
+      <rect width="56" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">CI/CD</text>
+      <rect x="64" y="0" width="56" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">Docker</text>
+      <rect x="128" y="0" width="64" height="20" rx="4" fill="#062E23" stroke="#10B981" stroke-width="0.8" />
+      <text x="10" y="14" class="tag-mono" fill="#6EE7B7">DevOps</text>
+    </g>
   </g>
 </svg>

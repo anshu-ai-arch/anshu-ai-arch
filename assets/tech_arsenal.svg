@@ -1,163 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 250" width="100%" height="100%">
   <defs>
-    <!-- Column 1 Clip for Accent Strip -->
-    <clipPath id="col1-clip">
-      <rect x="36" y="72" width="260" height="168" rx="10" />
-    </clipPath>
-
-    <!-- Column 2 Clip for Accent Strip -->
-    <clipPath id="col2-clip">
-      <rect x="308" y="72" width="260" height="168" rx="10" />
-    </clipPath>
-
-    <!-- Column 3 Clip for Accent Strip -->
-    <clipPath id="col3-clip">
-      <rect x="580" y="72" width="264" height="168" rx="10" />
-    </clipPath>
+    <!-- Background Canvas matching GitHub Dark Mode -->
+    <linearGradient id="tech-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
   </defs>
 
   <style>
-    .arsenal-tag {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    .meta-tag {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.5px;
-      fill: #D97706;
+      letter-spacing: 2px;
+      fill: #A1A1AA;
     }
-    .arsenal-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 20px;
+    .main-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 21px;
       font-weight: 800;
       letter-spacing: -0.3px;
-      fill: #1C1917;
+      fill: #FAF5EE;
     }
-    .col-header-pine {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 13px;
+    .col-header {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      fill: #064E3B;
+      letter-spacing: 1px;
       text-transform: uppercase;
     }
-    .col-header-amber {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      fill: #D97706;
-      text-transform: uppercase;
-    }
-    .bullet-item {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    .skill-item {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 12px;
-      font-weight: 500;
-      fill: #44403C;
+      fill: #D4D4D8;
     }
   </style>
 
-  <!-- Base Canvas Background -->
-  <rect width="880" height="260" rx="16" fill="#F9F6F0" stroke="#D6D3CE" stroke-width="1.2" />
+  <!-- Base Canvas -->
+  <rect width="880" height="250" rx="10" fill="url(#tech-bg-dark)" stroke="#30363D" stroke-width="1" />
 
   <!-- Section Header -->
   <g transform="translate(36, 30)">
-    <text x="0" y="0" class="arsenal-tag">TECHNICAL ARSENAL // TOOLCHAIN</text>
-    <text x="0" y="22" class="arsenal-title">Production Stack &amp; Research Tooling</text>
+    <text x="0" y="0" class="meta-tag">04 // PRODUCTION STACK &amp; VERIFIED TOOLING</text>
+    <text x="0" y="24" class="main-title">Core Engineering &amp; Research Toolchain</text>
   </g>
 
-  <!-- ==================== COLUMN 1: RESEARCH & DEEP LEARNING ==================== -->
-  <g>
-    <!-- Container -->
-    <rect x="36" y="72" width="260" height="168" rx="10" fill="#F0EDE6" stroke="#D6D3CE" stroke-width="1" />
-    
-    <!-- Left Accent Strip (Pine) -->
-    <g clip-path="url(#col1-clip)">
-      <rect x="36" y="72" width="4" height="168" fill="#064E3B" />
+  <!-- Column 1: Research & Deep Learning -->
+  <g transform="translate(36, 78)">
+    <rect width="258" height="142" rx="8" fill="#11161D" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="142" fill="#F59E0B" rx="1.75" />
+    <g transform="translate(18, 24)">
+      <text x="0" y="0" class="col-header" fill="#F59E0B">RESEARCH &amp; DEEP LEARNING</text>
+      <g transform="translate(0, 18)">
+        <circle cx="2" cy="6" r="2" fill="#F59E0B" />
+        <text x="12" y="10" class="skill-item">PyTorch &amp; Transformers</text>
+
+        <circle cx="2" cy="28" r="2" fill="#F59E0B" />
+        <text x="12" y="32" class="skill-item">EEG/ECG Signal Processing</text>
+
+        <circle cx="2" cy="50" r="2" fill="#F59E0B" />
+        <text x="12" y="54" class="skill-item">Explainable AI (SHAP/Attn)</text>
+
+        <circle cx="2" cy="72" r="2" fill="#F59E0B" />
+        <text x="12" y="76" class="skill-item">NumPy, SciPy &amp; Scikit-Learn</text>
+      </g>
     </g>
-
-    <!-- Column Header -->
-    <text x="52" y="96" class="col-header-pine">🔬 RESEARCH &amp; DEEP LEARNING</text>
-    <line x1="52" y1="106" x2="278" y2="106" stroke="#D6D3CE" stroke-width="0.8" />
-
-    <!-- Bullet Item 1: PyTorch & Transformers -->
-    <circle cx="58" cy="122" r="2.5" fill="#064E3B" />
-    <text x="68" y="126" class="bullet-item">PyTorch &amp; Transformers</text>
-
-    <!-- Bullet Item 2: EEG/ECG Signal Processing -->
-    <circle cx="58" cy="144" r="2.5" fill="#064E3B" />
-    <text x="68" y="148" class="bullet-item">EEG/ECG Signal Processing</text>
-
-    <!-- Bullet Item 3: Explainable AI (SHAP/Attention) -->
-    <circle cx="58" cy="166" r="2.5" fill="#064E3B" />
-    <text x="68" y="170" class="bullet-item">Explainable AI (SHAP/Attention)</text>
-
-    <!-- Bullet Item 4: Hugging Face & OpenCV -->
-    <circle cx="58" cy="188" r="2.5" fill="#064E3B" />
-    <text x="68" y="192" class="bullet-item">Hugging Face &amp; OpenCV</text>
-
-    <!-- Bullet Item 5: NumPy, Pandas, Scikit-Learn -->
-    <circle cx="58" cy="210" r="2.5" fill="#064E3B" />
-    <text x="68" y="214" class="bullet-item">NumPy, Pandas, Scikit-Learn</text>
   </g>
 
-  <!-- ==================== COLUMN 2: CORE LANGUAGES ==================== -->
-  <g>
-    <!-- Container -->
-    <rect x="308" y="72" width="260" height="168" rx="10" fill="#F0EDE6" stroke="#D6D3CE" stroke-width="1" />
+  <!-- Column 2: Core Languages -->
+  <g transform="translate(310, 78)">
+    <rect width="258" height="142" rx="8" fill="#11161D" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="142" fill="#10B981" rx="1.75" />
+    <g transform="translate(18, 24)">
+      <text x="0" y="0" class="col-header" fill="#10B981">CORE LANGUAGES</text>
+      <g transform="translate(0, 18)">
+        <circle cx="2" cy="6" r="2" fill="#10B981" />
+        <text x="12" y="10" class="skill-item">Python (Async, Scientific)</text>
 
-    <!-- Left Accent Strip (Amber) -->
-    <g clip-path="url(#col2-clip)">
-      <rect x="308" y="72" width="4" height="168" fill="#D97706" />
+        <circle cx="2" cy="28" r="2" fill="#10B981" />
+        <text x="12" y="32" class="skill-item">Modern C++ (17/20, Systems)</text>
+
+        <circle cx="2" cy="50" r="2" fill="#10B981" />
+        <text x="12" y="54" class="skill-item">TypeScript &amp; JavaScript</text>
+
+        <circle cx="2" cy="72" r="2" fill="#10B981" />
+        <text x="12" y="76" class="skill-item">Bash / POSIX Shell Scripting</text>
+      </g>
     </g>
-
-    <!-- Column Header -->
-    <text x="324" y="96" class="col-header-amber">⚡ CORE LANGUAGES</text>
-    <line x1="324" y1="106" x2="550" y2="106" stroke="#D6D3CE" stroke-width="0.8" />
-
-    <!-- Bullet Item 1: Python (Scientific, Async) -->
-    <circle cx="330" cy="122" r="2.5" fill="#D97706" />
-    <text x="340" y="126" class="bullet-item">Python (Scientific, Async)</text>
-
-    <!-- Bullet Item 2: C++ (High-Performance) -->
-    <circle cx="330" cy="144" r="2.5" fill="#D97706" />
-    <text x="340" y="148" class="bullet-item">C++ (High-Performance)</text>
-
-    <!-- Bullet Item 3: TypeScript & JavaScript -->
-    <circle cx="330" cy="166" r="2.5" fill="#D97706" />
-    <text x="340" y="170" class="bullet-item">TypeScript &amp; JavaScript</text>
-
-    <!-- Bullet Item 4: SQL & Shell Scripting -->
-    <circle cx="330" cy="188" r="2.5" fill="#D97706" />
-    <text x="340" y="192" class="bullet-item">SQL &amp; Shell Scripting</text>
   </g>
 
-  <!-- ==================== COLUMN 3: SYSTEMS & INFRASTRUCTURE ==================== -->
-  <g>
-    <!-- Container -->
-    <rect x="580" y="72" width="264" height="168" rx="10" fill="#F0EDE6" stroke="#D6D3CE" stroke-width="1" />
+  <!-- Column 3: Systems & Infrastructure -->
+  <g transform="translate(584, 78)">
+    <rect width="258" height="142" rx="8" fill="#11161D" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="3.5" height="142" fill="#10B981" rx="1.75" />
+    <g transform="translate(18, 24)">
+      <text x="0" y="0" class="col-header" fill="#10B981">SYSTEMS &amp; INFRASTRUCTURE</text>
+      <g transform="translate(0, 18)">
+        <circle cx="2" cy="6" r="2" fill="#10B981" />
+        <text x="12" y="10" class="skill-item">Docker &amp; Linux Internals</text>
 
-    <!-- Left Accent Strip (Pine) -->
-    <g clip-path="url(#col3-clip)">
-      <rect x="580" y="72" width="4" height="168" fill="#064E3B" />
+        <circle cx="2" cy="28" r="2" fill="#10B981" />
+        <text x="12" y="32" class="skill-item">FastAPI &amp; Asynchronous APIs</text>
+
+        <circle cx="2" cy="50" r="2" fill="#10B981" />
+        <text x="12" y="54" class="skill-item">PostgreSQL &amp; Vector Stores</text>
+
+        <circle cx="2" cy="72" r="2" fill="#10B981" />
+        <text x="12" y="76" class="skill-item">Git &amp; GitHub Actions CI/CD</text>
+      </g>
     </g>
-
-    <!-- Column Header -->
-    <text x="596" y="96" class="col-header-pine">🛠️ SYSTEMS &amp; INFRASTRUCTURE</text>
-    <line x1="596" y1="106" x2="826" y2="106" stroke="#D6D3CE" stroke-width="0.8" />
-
-    <!-- Bullet Item 1: Docker & Linux Internals -->
-    <circle cx="602" cy="122" r="2.5" fill="#064E3B" />
-    <text x="612" y="126" class="bullet-item">Docker &amp; Linux Internals</text>
-
-    <!-- Bullet Item 2: FastAPI & REST/GraphQL -->
-    <circle cx="602" cy="144" r="2.5" fill="#064E3B" />
-    <text x="612" y="148" class="bullet-item">FastAPI &amp; REST/GraphQL</text>
-
-    <!-- Bullet Item 3: Git, GitHub Actions, CI/CD -->
-    <circle cx="602" cy="166" r="2.5" fill="#064E3B" />
-    <text x="612" y="170" class="bullet-item">Git, GitHub Actions, CI/CD</text>
-
-    <!-- Bullet Item 4: PostgreSQL & Vector DBs -->
-    <circle cx="602" cy="188" r="2.5" fill="#064E3B" />
-    <text x="612" y="192" class="bullet-item">PostgreSQL &amp; Vector DBs</text>
   </g>
 </svg>

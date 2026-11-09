@@ -1,213 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="100%" height="100%">
   <defs>
-    <!-- Left Pillar Top Clip for Header Bar -->
-    <clipPath id="left-pillar-clip">
-      <rect x="36" y="90" width="396" height="310" rx="12" />
-    </clipPath>
-
-    <!-- Right Pillar Top Clip for Header Bar -->
-    <clipPath id="right-pillar-clip">
-      <rect x="450" y="90" width="396" height="310" rx="12" />
-    </clipPath>
-
-    <!-- Subtle Drop Shadow for White Tier Cards -->
-    <filter id="tier-shadow" x="-4%" y="-6%" width="108%" height="116%" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="2.5" flood-color="#1C1917" flood-opacity="0.04" />
-    </filter>
+    <!-- Background Gradient matching GitHub Dark Mode -->
+    <linearGradient id="stack-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
+    </linearGradient>
   </defs>
 
   <style>
-    .header-tag {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    .meta-tag {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.5px;
-      fill: #D97706;
+      letter-spacing: 2px;
+      fill: #A1A1AA;
     }
-    .header-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 20px;
+    .main-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 21px;
       font-weight: 800;
       letter-spacing: -0.3px;
-      fill: #1C1917;
+      fill: #FAF5EE;
     }
-    .header-subtitle {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      fill: #78716C;
-    }
-    .pillar-header-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 12px;
+    .pillar-header {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
       font-weight: 700;
       letter-spacing: 1px;
-      fill: #FFFFFF;
-      text-anchor: middle;
     }
-    .tier-label {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-      font-size: 10px;
+    .block-label {
+      font-family: ui-monospace, monospace;
+      font-size: 9.5px;
       font-weight: 700;
-      letter-spacing: 0.8px;
-      fill: #D97706;
+      letter-spacing: 1px;
     }
-    .tier-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    .block-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-size: 14px;
       font-weight: 700;
-      letter-spacing: -0.2px;
-      fill: #1C1917;
+      fill: #FAF5EE;
     }
-    .pill-pine-bg {
-      fill: #F0FDF4;
-      stroke: #A7F3D0;
-      stroke-width: 1;
-    }
-    .pill-pine-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    .pill-text {
+      font-family: ui-monospace, monospace;
       font-size: 10px;
-      font-weight: 600;
-      fill: #065F46;
-      text-anchor: middle;
-    }
-    .pill-amber-bg {
-      fill: #FFFBEB;
-      stroke: #FDE68A;
-      stroke-width: 1;
-    }
-    .pill-amber-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 10px;
-      font-weight: 600;
-      fill: #92400E;
-      text-anchor: middle;
+      fill: #A1A1AA;
     }
   </style>
 
-  <!-- Base Canvas Background -->
-  <rect width="880" height="420" rx="16" fill="#F9F6F0" stroke="#D6D3CE" stroke-width="1.2" />
+  <!-- Base Canvas -->
+  <rect width="880" height="380" rx="10" fill="url(#stack-bg-dark)" stroke="#30363D" stroke-width="1" />
 
-  <!-- Top Header Section -->
+  <!-- Section Header -->
   <g transform="translate(36, 32)">
-    <text x="0" y="0" class="header-tag">EXPERTISE ARCHITECTURE // ANSHU TIWARI</text>
-    <text x="0" y="24" class="header-title">Dual-Domain AI Architecture</text>
-    <text x="0" y="44" class="header-subtitle">Research Scientist &amp; Production AI Engineer — bridging discovery to deployment</text>
+    <text x="0" y="0" class="meta-tag">02 // ARCHITECTURE &amp; RESEARCH SPECIFICATION</text>
+    <text x="0" y="24" class="main-title">Dual-Domain AI Architecture</text>
   </g>
 
-  <!-- ==================== LEFT PILLAR: RESEARCH SCIENTIST ==================== -->
-  <!-- Container -->
-  <rect x="36" y="90" width="396" height="310" rx="12" fill="#ECFDF5" stroke="#064E3B" stroke-opacity="0.3" stroke-width="1.2" />
+  <!-- ================= LEFT PILLAR: RESEARCH SCIENTIST ================= -->
+  <g transform="translate(36, 80)">
+    <!-- Column Outer Border -->
+    <rect width="396" height="270" rx="8" fill="#11161D" stroke="#30363D" stroke-width="1" />
+    <!-- Pillar Title Strip -->
+    <rect x="0" y="0" width="396" height="32" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <text x="16" y="21" class="pillar-header" fill="#F59E0B">01 / RESEARCH SCIENTIST DOMAIN</text>
 
-  <!-- Header Bar -->
-  <g clip-path="url(#left-pillar-clip)">
-    <rect x="36" y="90" width="396" height="36" fill="#064E3B" />
-    <text x="234" y="113" class="pillar-header-text">🔬 RESEARCH SCIENTIST DOMAIN</text>
+    <!-- Block 1: Clinical Signal Intelligence -->
+    <g transform="translate(14, 44)">
+      <rect width="368" height="64" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.8" />
+      <text x="14" y="18" class="block-label" fill="#F59E0B">PHYSIOLOGICAL SIGNALS</text>
+      <text x="14" y="36" class="block-title">ECG &amp; EEG Deep Learning</text>
+      <!-- Pills -->
+      <g transform="translate(14, 44)">
+        <text x="0" y="11" class="pill-text">&bull; Time-Series CNNs &bull; Seizure Modeling &bull; Cardiac Telemetry</text>
+      </g>
+    </g>
+
+    <!-- Block 2: Model Interpretability -->
+    <g transform="translate(14, 118)">
+      <rect width="368" height="64" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.8" />
+      <text x="14" y="18" class="block-label" fill="#F59E0B">INTERPRETABILITY</text>
+      <text x="14" y="36" class="block-title">Explainable AI (XAI)</text>
+      <g transform="translate(14, 44)">
+        <text x="0" y="11" class="pill-text">&bull; Attention Maps &bull; Saliency Decoding &bull; Clinical Validation</text>
+      </g>
+    </g>
+
+    <!-- Block 3: Transformer Interpretability -->
+    <g transform="translate(14, 192)">
+      <rect width="368" height="64" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.8" />
+      <text x="14" y="18" class="block-label" fill="#F59E0B">MECHANISTIC STUDIES</text>
+      <text x="14" y="36" class="block-title">Transformer Internals</text>
+      <g transform="translate(14, 44)">
+        <text x="0" y="11" class="pill-text">&bull; GPT-2 Attention Probing &bull; Activation Tracing &bull; Residuals</text>
+      </g>
+    </g>
   </g>
 
-  <!-- Left Pillar - Tier 1: Clinical Signal Intelligence -->
-  <g filter="url(#tier-shadow)">
-    <rect x="46" y="138" width="376" height="78" rx="8" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" />
+  <!-- ================= RIGHT PILLAR: AI ENGINEER ================= -->
+  <g transform="translate(448, 80)">
+    <rect width="396" height="270" rx="8" fill="#11161D" stroke="#30363D" stroke-width="1" />
+    <rect x="0" y="0" width="396" height="32" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <text x="16" y="21" class="pillar-header" fill="#10B981">02 / AI SYSTEMS ENGINEER DOMAIN</text>
+
+    <!-- Block 1: Autonomous Systems -->
+    <g transform="translate(14, 44)">
+      <rect width="368" height="64" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.8" />
+      <text x="14" y="18" class="block-label" fill="#10B981">AGENTIC SYSTEMS</text>
+      <text x="14" y="36" class="block-title">Multi-Agent Architectures</text>
+      <g transform="translate(14, 44)">
+        <text x="0" y="11" class="pill-text">&bull; Autonomous Swarms &bull; BM25 RAG &bull; Policy-as-Code</text>
+      </g>
+    </g>
+
+    <!-- Block 2: Production ML Stack -->
+    <g transform="translate(14, 118)">
+      <rect width="368" height="64" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.8" />
+      <text x="14" y="18" class="block-label" fill="#10B981">INFRASTRUCTURE</text>
+      <text x="14" y="36" class="block-title">Production ML &amp; Serving</text>
+      <g transform="translate(14, 44)">
+        <text x="0" y="11" class="pill-text">&bull; PyTorch &bull; FastAPI Async &bull; Docker Containerization</text>
+      </g>
+    </g>
+
+    <!-- Block 3: Full-Stack Systems -->
+    <g transform="translate(14, 192)">
+      <rect width="368" height="64" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.8" />
+      <text x="14" y="18" class="block-label" fill="#10B981">RELIABILITY</text>
+      <text x="14" y="36" class="block-title">SRE &amp; Systems Execution</text>
+      <g transform="translate(14, 44)">
+        <text x="0" y="11" class="pill-text">&bull; Exactly-Once Execution &bull; Chaos Tests &bull; PostgreSQL</text>
+      </g>
+    </g>
   </g>
-  <text x="60" y="156" class="tier-label">CLINICAL SIGNAL INTELLIGENCE</text>
-  <text x="60" y="174" class="tier-title">ECG &amp; EEG Deep Learning</text>
-  <!-- Pills -->
-  <rect x="60" y="185" width="100" height="21" rx="4" class="pill-pine-bg" />
-  <text x="110" y="199" class="pill-pine-text">Time-Series CNNs</text>
-
-  <rect x="167" y="185" width="98" height="21" rx="4" class="pill-pine-bg" />
-  <text x="216" y="199" class="pill-pine-text">Seizure Detection</text>
-
-  <rect x="272" y="185" width="94" height="21" rx="4" class="pill-pine-bg" />
-  <text x="319" y="199" class="pill-pine-text">Cardiac Patterns</text>
-
-  <!-- Left Pillar - Tier 2: Model Interpretability -->
-  <g filter="url(#tier-shadow)">
-    <rect x="46" y="224" width="376" height="78" rx="8" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" />
-  </g>
-  <text x="60" y="242" class="tier-label">MODEL INTERPRETABILITY</text>
-  <text x="60" y="260" class="tier-title">Explainable AI (XAI)</text>
-  <!-- Pills -->
-  <rect x="60" y="271" width="90" height="21" rx="4" class="pill-pine-bg" />
-  <text x="105" y="285" class="pill-pine-text">Attention Maps</text>
-
-  <rect x="157" y="271" width="88" height="21" rx="4" class="pill-pine-bg" />
-  <text x="201" y="285" class="pill-pine-text">SHAP Analysis</text>
-
-  <rect x="252" y="271" width="100" height="21" rx="4" class="pill-pine-bg" />
-  <text x="302" y="285" class="pill-pine-text">Clinical Validation</text>
-
-  <!-- Left Pillar - Tier 3: Neural Architecture Research -->
-  <g filter="url(#tier-shadow)">
-    <rect x="46" y="310" width="376" height="78" rx="8" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" />
-  </g>
-  <text x="60" y="328" class="tier-label">NEURAL ARCHITECTURE RESEARCH</text>
-  <text x="60" y="346" class="tier-title">Foundation Model Analysis</text>
-  <!-- Pills -->
-  <rect x="60" y="357" width="92" height="21" rx="4" class="pill-pine-bg" />
-  <text x="106" y="371" class="pill-pine-text">GPT-2 Internals</text>
-
-  <rect x="159" y="357" width="106" height="21" rx="4" class="pill-pine-bg" />
-  <text x="212" y="371" class="pill-pine-text">Mechanistic Interp.</text>
-
-  <rect x="272" y="357" width="102" height="21" rx="4" class="pill-pine-bg" />
-  <text x="323" y="371" class="pill-pine-text">Activation Studies</text>
-
-  <!-- ==================== RIGHT PILLAR: AI ENGINEER ==================== -->
-  <!-- Container -->
-  <rect x="450" y="90" width="396" height="310" rx="12" fill="#FFFBEB" stroke="#D97706" stroke-opacity="0.3" stroke-width="1.2" />
-
-  <!-- Header Bar -->
-  <g clip-path="url(#right-pillar-clip)">
-    <rect x="450" y="90" width="396" height="36" fill="#D97706" />
-    <text x="648" y="113" class="pillar-header-text">⚡ AI ENGINEER DOMAIN</text>
-  </g>
-
-  <!-- Right Pillar - Tier 1: Autonomous Systems -->
-  <g filter="url(#tier-shadow)">
-    <rect x="460" y="138" width="376" height="78" rx="8" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" />
-  </g>
-  <text x="474" y="156" class="tier-label">AUTONOMOUS SYSTEMS</text>
-  <text x="474" y="174" class="tier-title">Multi-Agent Architectures</text>
-  <!-- Pills -->
-  <rect x="474" y="185" width="86" height="21" rx="4" class="pill-amber-bg" />
-  <text x="517" y="199" class="pill-amber-text">Agent Swarms</text>
-
-  <rect x="567" y="185" width="86" height="21" rx="4" class="pill-amber-bg" />
-  <text x="610" y="199" class="pill-amber-text">RAG Pipelines</text>
-
-  <rect x="660" y="185" width="104" height="21" rx="4" class="pill-amber-bg" />
-  <text x="712" y="199" class="pill-amber-text">Tool Orchestration</text>
-
-  <!-- Right Pillar - Tier 2: Production ML Stack -->
-  <g filter="url(#tier-shadow)">
-    <rect x="460" y="224" width="376" height="78" rx="8" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" />
-  </g>
-  <text x="474" y="242" class="tier-label">PRODUCTION ML STACK</text>
-  <text x="474" y="260" class="tier-title">Scalable AI Infrastructure</text>
-  <!-- Pills -->
-  <rect x="474" y="271" width="58" height="21" rx="4" class="pill-amber-bg" />
-  <text x="503" y="285" class="pill-amber-text">PyTorch</text>
-
-  <rect x="539" y="271" width="58" height="21" rx="4" class="pill-amber-bg" />
-  <text x="568" y="285" class="pill-amber-text">FastAPI</text>
-
-  <rect x="604" y="271" width="84" height="21" rx="4" class="pill-amber-bg" />
-  <text x="646" y="285" class="pill-amber-text">Docker &amp; K8s</text>
-
-  <!-- Right Pillar - Tier 3: Full-Stack Engineering -->
-  <g filter="url(#tier-shadow)">
-    <rect x="460" y="310" width="376" height="78" rx="8" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" />
-  </g>
-  <text x="474" y="328" class="tier-label">FULL-STACK ENGINEERING</text>
-  <text x="474" y="346" class="tier-title">End-to-End Development</text>
-  <!-- Pills -->
-  <rect x="474" y="357" width="72" height="21" rx="4" class="pill-amber-bg" />
-  <text x="510" y="371" class="pill-amber-text">TypeScript</text>
-
-  <rect x="553" y="357" width="56" height="21" rx="4" class="pill-amber-bg" />
-  <text x="581" y="371" class="pill-amber-text">Node.js</text>
-
-  <rect x="616" y="357" width="90" height="21" rx="4" class="pill-amber-bg" />
-  <text x="661" y="371" class="pill-amber-text">System Design</text>
 </svg>

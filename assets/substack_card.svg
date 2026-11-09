@@ -1,77 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 150" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 130" width="100%" height="100%">
   <defs>
-    <!-- Amber Gradient for CTA Button -->
-    <linearGradient id="btn-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D97706" />
-      <stop offset="100%" stop-color="#F59E0B" />
+    <!-- Background Canvas matching GitHub Dark Mode -->
+    <linearGradient id="sub-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#161B22" />
     </linearGradient>
-
-    <!-- Outer Card Clip Path for Left Accent Strip -->
-    <clipPath id="card-clip-sub">
-      <rect width="880" height="150" rx="14" />
-    </clipPath>
-
-    <!-- Subtle Button Drop Shadow -->
-    <filter id="btn-shadow" x="-10%" y="-15%" width="120%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#D97706" flood-opacity="0.22" />
-    </filter>
   </defs>
 
   <style>
-    .sub-tag {
+    .meta-tag {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #F59E0B;
+    }
+    .sub-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      fill: #FAF5EE;
+    }
+    .sub-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 12.5px;
+      fill: #A1A1AA;
+    }
+    .btn-text {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1.8px;
-      fill: #D97706;
-      text-transform: uppercase;
-    }
-    .sub-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: -0.3px;
-      fill: #1C1917;
-    }
-    .sub-desc {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 13px;
-      letter-spacing: -0.1px;
-      fill: #44403C;
-    }
-    .sub-accent {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: -0.1px;
-      fill: #064E3B;
-    }
-    .btn-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.1px;
-      fill: #FFFFFF;
+      letter-spacing: 0.5px;
+      fill: #0D1117;
     }
   </style>
 
-  <!-- Outer Container -->
-  <rect width="880" height="150" rx="14" fill="#F9F6F0" stroke="#D6D3CE" stroke-width="1" />
+  <!-- Base Canvas -->
+  <rect width="880" height="130" rx="10" fill="url(#sub-bg-dark)" stroke="#30363D" stroke-width="1" />
+  <rect x="0" y="0" width="3.5" height="130" fill="#F59E0B" rx="1.75" />
 
-  <!-- Left Accent Strip (4px wide, Amber Bronze #D97706) -->
-  <rect x="0" y="0" width="4" height="150" fill="#D97706" clip-path="url(#card-clip-sub)" />
-
-  <!-- Content (Left side, x=36) -->
-  <g transform="translate(36, 0)">
-    <text x="0" y="36" class="sub-tag">PUBLICATIONS &amp; RESEARCH ESSAYS</text>
-    <text x="0" y="60" class="sub-title">The AI Architect Journal — Anshu Tiwari</text>
-    <text x="0" y="84" class="sub-desc">Deep-dive analyses on ECG/EEG signal intelligence, explainable AI, and autonomous agent architectures.</text>
-    <text x="0" y="104" class="sub-accent">Technical dispatches bridging clinical AI research and production engineering.</text>
+  <!-- Left Content Block -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="0" class="meta-tag">05 // TECHNICAL PUBLICATIONS &amp; ESSAYS</text>
+    <text x="0" y="22" class="sub-title">The AI Architect Journal — Anshu Tiwari</text>
+    <text x="0" y="44" class="sub-desc">Rigorous technical breakdowns on ECG/EEG signal intelligence, mechanistic interpretability, and production agent architectures.</text>
+    <text x="0" y="62" class="sub-desc" fill="#10B981">Dispatches at the intersection of biological computing and autonomous systems.</text>
   </g>
 
-  <!-- Right Side: Rounded CTA Button (x=650, 190x42, rx=8, vertically centered at y=54) -->
-  <g transform="translate(650, 54)">
-    <rect width="190" height="42" rx="8" fill="url(#btn-grad)" filter="url(#btn-shadow)" />
-    <text x="95" y="26" text-anchor="middle" class="btn-text">Read on Substack &#8594;</text>
+  <!-- Right CTA Button -->
+  <g transform="translate(684, 46)">
+    <rect width="160" height="38" rx="6" fill="#F59E0B" stroke="#D97706" stroke-width="0.8" />
+    <text x="80" y="23" text-anchor="middle" class="btn-text">Read on Substack &rarr;</text>
   </g>
 </svg>
