@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas -->
+    <linearGradient id="p-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d10" />
+      <stop offset="100%" stop-color="#0b1313" />
+    </linearGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f191b" />
+      <stop offset="100%" stop-color="#0b1314" />
+    </linearGradient>
+
+    <!-- Card Border -->
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .section-tag {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #10b981;
+    }
+    .section-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      fill: #ffffff;
+    }
+    .proj-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      fill: #34d399;
+    }
+    .proj-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 12.5px;
+      line-height: 1.5;
+      fill: #94a3b8;
+    }
+    .tag-label {
+      font-family: ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      fill: #a7f3d0;
+    }
+    .repo-icon {
+      fill: #10b981;
+    }
+  </style>
+
+  <!-- Base Canvas -->
+  <rect width="880" height="390" rx="16" fill="url(#p-bg)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.3" />
+
+  <!-- Section Header -->
+  <g transform="translate(36, 32)">
+    <text x="0" y="0" class="section-tag">ENGINEERING ARTIFACTS // CURATED</text>
+    <text x="0" y="24" class="section-title">Featured Research &amp; Open-Source Projects</text>
+  </g>
+
+  <!-- ================= CARD 1: 500-AI-Agents-Projects (Top Left) ================= -->
+  <g transform="translate(36, 80)">
+    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
+    <!-- Indicator Bar -->
+    <rect x="0" y="0" width="4" height="135" rx="2" fill="#10b981" />
+
+    <g transform="translate(20, 22)">
+      <!-- Repo Icon & Title -->
+      <text x="0" y="0" class="proj-title">🤖 500-AI-Agents-Projects</text>
+      <!-- Description -->
+      <text x="0" y="22" class="proj-desc">Curated architectural showcase of autonomous AI agent</text>
+      <text x="0" y="38" class="proj-desc">workflows, memory patterns, and production use cases.</text>
+      <!-- Tags -->
+      <g transform="translate(0, 56)">
+        <rect width="64" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="8" y="15" class="tag-label">Python</text>
+
+        <rect x="72" y="0" width="82" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="80" y="15" class="tag-label">AI Agents</text>
+
+        <rect x="162" y="0" width="88" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="170" y="15" class="tag-label">LLM Swarms</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= CARD 2: hostalgrid-plus-plus (Top Right) ================= -->
+  <g transform="translate(450, 80)">
+    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
+    <rect x="0" y="0" width="4" height="135" rx="2" fill="#34d399" />
+
+    <g transform="translate(20, 22)">
+      <text x="0" y="0" class="proj-title">⚡ hostalgrid-plus-plus</text>
+      <text x="0" y="22" class="proj-desc">Computational modeling and analytical frameworks for</text>
+      <text x="0" y="38" class="proj-desc">algorithmic grid resource allocation and optimization.</text>
+      <g transform="translate(0, 56)">
+        <rect width="70" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="8" y="15" class="tag-label">Jupyter</text>
+
+        <rect x="78" y="0" width="94" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="86" y="15" class="tag-label">Optimization</text>
+
+        <rect x="180" y="0" width="76" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="188" y="15" class="tag-label">Systems</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= CARD 3: MOSIP1 (Bottom Left) ================= -->
+  <g transform="translate(36, 230)">
+    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
+    <rect x="0" y="0" width="4" height="135" rx="2" fill="#10b981" />
+
+    <g transform="translate(20, 22)">
+      <text x="0" y="0" class="proj-title">🛡️ MOSIP1</text>
+      <text x="0" y="22" class="proj-desc">Scalable TypeScript implementation and systems</text>
+      <text x="0" y="38" class="proj-desc">integration for national-scale open digital identity.</text>
+      <g transform="translate(0, 56)">
+        <rect width="84" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="8" y="15" class="tag-label">TypeScript</text>
+
+        <rect x="92" y="0" width="102" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="100" y="15" class="tag-label">Digital Identity</text>
+
+        <rect x="202" y="0" width="80" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="210" y="15" class="tag-label">Architecture</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= CARD 4: Algo-Tree (Bottom Right) ================= -->
+  <g transform="translate(450, 230)">
+    <rect width="394" height="135" rx="12" fill="url(#card-grad)" stroke="url(#card-border)" stroke-width="1.2" />
+    <rect x="0" y="0" width="4" height="135" rx="2" fill="#059669" />
+
+    <g transform="translate(20, 22)">
+      <text x="0" y="0" class="proj-title">🌳 Algo-Tree</text>
+      <text x="0" y="22" class="proj-desc">Foundational data structures, algorithmic paradigms,</text>
+      <text x="0" y="38" class="proj-desc">and high-efficiency software engineering patterns.</text>
+      <g transform="translate(0, 56)">
+        <rect width="46" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="8" y="15" class="tag-label">C++</text>
+
+        <rect x="54" y="0" width="112" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="62" y="15" class="tag-label">Data Structures</text>
+
+        <rect x="174" y="0" width="90" height="22" rx="4" fill="#0b241e" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.4" />
+        <text x="182" y="15" class="tag-label">Performance</text>
+      </g>
+    </g>
+  </g>
+</svg>

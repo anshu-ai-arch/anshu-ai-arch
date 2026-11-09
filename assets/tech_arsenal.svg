@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="t-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d10" />
+      <stop offset="100%" stop-color="#0b1414" />
+    </linearGradient>
+
+    <linearGradient id="col-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1a1c" />
+      <stop offset="100%" stop-color="#0a1314" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .arsenal-tag {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #10b981;
+    }
+    .arsenal-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      fill: #ffffff;
+    }
+    .col-header {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      fill: #34d399;
+      text-transform: uppercase;
+    }
+    .skill-item {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 12px;
+      fill: #e2e8f0;
+    }
+    .bullet {
+      fill: #10b981;
+    }
+  </style>
+
+  <!-- Canvas Base -->
+  <rect width="880" height="230" rx="16" fill="url(#t-bg)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.3" />
+
+  <!-- Section Header -->
+  <g transform="translate(36, 32)">
+    <text x="0" y="0" class="arsenal-tag">TECHNICAL ARSENAL // TOOLCHAIN</text>
+    <text x="0" y="24" class="arsenal-title">Production Stack &amp; Research Tooling</text>
+  </g>
+
+  <!-- Column 1: AI & Deep Learning -->
+  <g transform="translate(36, 80)">
+    <rect width="258" height="125" rx="10" fill="url(#col-bg)" stroke="#10b981" stroke-width="1" stroke-opacity="0.25" />
+    <rect x="0" y="0" width="4" height="125" rx="2" fill="#10b981" />
+    <g transform="translate(18, 22)">
+      <text x="0" y="0" class="col-header">🧠 AI &amp; Deep Learning</text>
+      <g transform="translate(0, 18)">
+        <circle cx="3" cy="7" r="2.5" class="bullet" />
+        <text x="12" y="11" class="skill-item">PyTorch &amp; Transformers</text>
+
+        <circle cx="3" cy="27" r="2.5" class="bullet" />
+        <text x="12" y="31" class="skill-item">LangChain &amp; AI Agents</text>
+
+        <circle cx="3" cy="47" r="2.5" class="bullet" />
+        <text x="12" y="51" class="skill-item">Hugging Face &amp; OpenCV</text>
+
+        <circle cx="3" cy="67" r="2.5" class="bullet" />
+        <text x="12" y="71" class="skill-item">NumPy, Pandas, Scikit</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Column 2: Languages -->
+  <g transform="translate(310, 80)">
+    <rect width="258" height="125" rx="10" fill="url(#col-bg)" stroke="#10b981" stroke-width="1" stroke-opacity="0.25" />
+    <rect x="0" y="0" width="4" height="125" rx="2" fill="#34d399" />
+    <g transform="translate(18, 22)">
+      <text x="0" y="0" class="col-header">⚡ Core Languages</text>
+      <g transform="translate(0, 18)">
+        <circle cx="3" cy="7" r="2.5" class="bullet" />
+        <text x="12" y="11" class="skill-item">Python (Async, Scientific)</text>
+
+        <circle cx="3" cy="27" r="2.5" class="bullet" />
+        <text x="12" y="31" class="skill-item">C++ (Modern, Systems)</text>
+
+        <circle cx="3" cy="47" r="2.5" class="bullet" />
+        <text x="12" y="51" class="skill-item">TypeScript &amp; JavaScript</text>
+
+        <circle cx="3" cy="67" r="2.5" class="bullet" />
+        <text x="12" y="71" class="skill-item">Bash / POSIX Shell</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Column 3: Systems & Infra -->
+  <g transform="translate(584, 80)">
+    <rect width="258" height="125" rx="10" fill="url(#col-bg)" stroke="#10b981" stroke-width="1" stroke-opacity="0.25" />
+    <rect x="0" y="0" width="4" height="125" rx="2" fill="#059669" />
+    <g transform="translate(18, 22)">
+      <text x="0" y="0" class="col-header">🛠️ Systems &amp; Runtime</text>
+      <g transform="translate(0, 18)">
+        <circle cx="3" cy="7" r="2.5" class="bullet" />
+        <text x="12" y="11" class="skill-item">Docker &amp; Linux Internals</text>
+
+        <circle cx="3" cy="27" r="2.5" class="bullet" />
+        <text x="12" y="31" class="skill-item">FastAPI &amp; Asynchronous APIs</text>
+
+        <circle cx="3" cy="47" r="2.5" class="bullet" />
+        <text x="12" y="51" class="skill-item">Git &amp; GitHub Actions</text>
+
+        <circle cx="3" cy="67" r="2.5" class="bullet" />
+        <text x="12" y="71" class="skill-item">PostgreSQL &amp; Vector DBs</text>
+      </g>
+    </g>
+  </g>
+</svg>
