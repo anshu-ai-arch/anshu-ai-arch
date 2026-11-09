@@ -9,7 +9,7 @@
 
 <!-- Real-Time Terminal Status -->
 <a href="https://github.com/anshu-ai-arch">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=2800&pause=1200&color=10B981&center=true&vCenter=true&width=780&lines=AI+Systems+Engineer+%26+Deep+Learning+Researcher+in+Biosignals;Autonomous+Multi-Agent+Swarms+%26+Deterministic+Triage;Decoding+Multi-Lead+EEG+%26+ECG+with+Deep+Learning;Explainable+AI+(XAI)+%26+Attention+Head+Probing;Production+ML+Infrastructure+%7C+PyTorch+%26+FastAPI" alt="Terminal Status" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=2800&pause=1200&color=10B981&center=true&vCenter=true&width=780&lines=AI+Systems+Engineer+%26+Deep+Learning+Researcher+in+Biosignals;RazorOps+Autonomous+Payment+Operations+Command+Center;LangGraph+Agent+Orchestrator+%2B+CockroachDB+SHA-256+Ledger;Decoding+Multi-Lead+EEG+%26+ECG+with+Deep+Learning;Explainable+AI+(XAI)+%26+Attention+Head+Probing" alt="Terminal Status" />
 </a>
 
 <br/>
@@ -50,15 +50,15 @@
         ANSHU TIWARI &mdash; <span style="color: #10B981;">AI Systems Engineer &amp; Deep Learning Researcher in Biosignals</span>
       </h2>
       <p style="font-size: 17px; line-height: 1.6; color: #F4F4F5; margin: 0 0 20px 0;">
-        Specialized in <b>autonomous multi-agent swarm orchestration</b> (deterministic triage, policy-as-code verification, and incident resolution copilots) and <b>deep learning for physiological biosignals</b> (ECG cardiac telemetry &amp; multi-lead EEG neural decoding with Explainable AI).
+        Creator of <b>RazorOps</b> (Autonomous Payment Operations Command Center with LangGraph &amp; CockroachDB) and researcher in <b>deep learning for physiological biosignals</b> (ECG cardiac telemetry &amp; multi-lead EEG neural decoding with Explainable AI).
       </p>
       <hr style="border: 0; border-top: 1.5px solid #30363D; margin: 18px 0;" />
       <table width="100%" style="font-size: 15px; border: none;">
         <tr>
           <td width="33%" valign="top" style="border: none; padding-right: 16px;">
-            <span style="color: #10B981; font-weight: 800; font-family: monospace; font-size: 13px;">01 // CENTRAL CORE</span><br/>
-            <b style="color: #FAF5EE; font-size: 18px;">Autonomous Multi-Agent Swarms</b><br/>
-            <span style="color: #D4D4D8; font-size: 14px; line-height: 1.5;">Async pub/sub event meshes, bounded deterministic tool triage, policy-as-code safety caps, and exactly-once execution pipelines.</span>
+            <span style="color: #10B981; font-weight: 800; font-family: monospace; font-size: 13px;">01 // AUTONOMOUS AI SYSTEMS</span><br/>
+            <b style="color: #FAF5EE; font-size: 18px;">RazorOps Command Center</b><br/>
+            <span style="color: #D4D4D8; font-size: 14px; line-height: 1.5;">LangGraph multi-agent orchestrator, real-time exception ingestion, Human-in-the-Loop policy gates, and CockroachDB SHA-256 audit logging.</span>
           </td>
           <td width="33%" valign="top" style="border: none; padding-right: 16px;">
             <span style="color: #F59E0B; font-weight: 800; font-family: monospace; font-size: 13px;">02 // BIOSIGNAL INTELLIGENCE</span><br/>
@@ -79,18 +79,37 @@
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 03: CENTRALIZED MULTI-AGENT SWARM ARCHITECTURE                           -->
+<!-- 03: RAZOROPS — AUTONOMOUS PAYMENT OPERATIONS COMMAND CENTER               -->
 <!-- ========================================================================= -->
 
-# 03 / AUTONOMOUS MULTI-AGENT SWARM ARCHITECTURE
+# 03 / RAZOROPS &mdash; AUTONOMOUS PAYMENT OPERATIONS ARCHITECTURE
 
 <p align="center">
-  <img src="./assets/architecture/multi-agent-system.gif" alt="Centralized Multi-Agent Swarm Architecture" width="100%" />
+  <a href="https://github.com/anshu-ai-arch/razorops">
+    <img src="./assets/architecture/razorops-architecture.gif" alt="RazorOps Autonomous Operations Architecture" width="100%" />
+  </a>
 </p>
 
-<p align="center">
-  <img src="./assets/architecture/agentic-ai.png" alt="Autonomous Agentic SRE Pipeline" width="100%" />
-</p>
+<table width="100%">
+  <tr>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #F59E0B; font-size: 15px;">Stage 01: Ingestion</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">FastAPI webhook stream capturing payment failures and transaction exceptions in real time.</span>
+    </td>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #10B981; font-size: 15px;">Stage 02: LangGraph</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">Multi-agent orchestration with adaptive tool selection and deterministic root-cause diagnosis.</span>
+    </td>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #38BDF8; font-size: 15px;">Stage 03: HITL Policy</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">Monetary limit verification with single-use cryptographic authorization tokens for human review.</span>
+    </td>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #A855F7; font-size: 15px;">Stage 04: Audit</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">CockroachDB immutable SHA-256 audit ledger with idempotent settlement and outbox pattern.</span>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -149,9 +168,9 @@
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/cornflakes-copilot-" style="color: #10B981; font-size: 18px;">cornflakes-copilot-</a></h3>
-      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Autonomous SRE and incident triage copilot &mdash; deterministic tool execution, BM25 runbook RAG, chaos tests, exactly-once pipelines.</p>
-      <code>AI Agents</code> &bull; <code>FastAPI</code> &bull; <code>PostgreSQL</code> &bull; <code>Docker</code>
+      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/razorops" style="color: #10B981; font-size: 18px;">razorops</a></h3>
+      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Autonomous payment operations command center &mdash; LangGraph agent orchestrator, CockroachDB SHA-256 audit ledger, Next.js telemetry.</p>
+      <code>LangGraph</code> &bull; <code>FastAPI</code> &bull; <code>CockroachDB</code> &bull; <code>Next.js</code>
     </td>
     <td width="50%" valign="top">
       <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/eeg_seizure_detection" style="color: #F59E0B; font-size: 18px;">eeg_seizure_detection</a></h3>
@@ -178,9 +197,9 @@
       <code>TypeScript</code> &bull; <code>Distributed Systems</code> &bull; <code>Identity</code>
     </td>
     <td width="50%" valign="top">
-      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/razorops" style="color: #FAF5EE; font-size: 18px;">razorops</a></h3>
-      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Production-grade automated CI/CD pipeline infrastructure, containerized build environments, and delivery acceleration.</p>
-      <code>CI/CD</code> &bull; <code>Docker</code> &bull; <code>DevOps</code> &bull; <code>Linux</code>
+      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/cornflakes-copilot-" style="color: #FAF5EE; font-size: 18px;">cornflakes-copilot-</a></h3>
+      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Deterministic incident triage copilot &mdash; BM25 runbook RAG, chaos testing, policy verification, exactly-once delivery.</p>
+      <code>AI Agents</code> &bull; <code>FastAPI</code> &bull; <code>Docker</code> &bull; <code>RAG</code>
     </td>
   </tr>
 </table>
@@ -196,8 +215,8 @@
 <div align="center">
 
 ```text
+AI Systems & Orchestration: LangGraph · FastAPI · CockroachDB · Docker · PostgreSQL · Next.js · Linux
 Deep Learning & Biosignals: PyTorch · Transformers · NumPy · SciPy · Scikit-Learn · Explainable AI (SHAP / Attention)
-AI Systems & Orchestration: Python (Async) · Modern C++ (17/20) · TypeScript · FastAPI · Docker · PostgreSQL · Linux
 Tooling & Infrastructure:   Git · GitHub Actions CI/CD · Bash · Jupyter · Vector Stores · Prometheus
 ```
 
