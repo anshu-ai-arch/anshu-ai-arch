@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Custom Emerald & Sage Architect Banner -->
-<img src="assets/header.svg" alt="Anshu Tiwari - AI Engineer & Researcher" width="100%" />
+<img src="https://raw.githubusercontent.com/anshu-ai-arch/anshu-ai-arch/main/assets/header.svg" alt="Anshu Tiwari - AI Engineer & Researcher" width="100%" />
 
 <br/><br/>
 
