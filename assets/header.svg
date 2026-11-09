@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d10" />
+      <stop offset="45%" stop-color="#0c1614" />
+      <stop offset="100%" stop-color="#0a1914" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#34d399" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.5" />
+    </linearGradient>
+
+    <!-- Glow Radial -->
+    <radialGradient id="emerald-glow" cx="80%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="corner-glow" cx="10%" cy="90%" r="40%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#10b981" stroke-width="0.7" stroke-opacity="0.07" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      letter-spacing: -0.5px;
+      fill: #ffffff;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      fill: #34d399;
+    }
+    .badge-text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 1px;
+      fill: #a7f3d0;
+    }
+    .tag-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      fill: #cbd5e1;
+    }
+    .status-dot {
+      animation: pulse 2.5s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="900" height="300" rx="16" fill="url(#bg-gradient)" />
+  <rect width="900" height="300" rx="16" fill="url(#grid)" />
+  
+  <!-- Ambient Glow Orbs -->
+  <rect width="900" height="300" rx="16" fill="url(#emerald-glow)" />
+  <rect width="900" height="300" rx="16" fill="url(#corner-glow)" />
+
+  <!-- Outer Glass Border -->
+  <rect x="1" y="1" width="898" height="298" rx="15" fill="none" stroke="url(#border-grad)" stroke-width="1.5" />
+
+  <!-- Status Pill (Top Left) -->
+  <g transform="translate(50, 42)">
+    <rect width="215" height="28" rx="14" fill="#062d22" stroke="#10b981" stroke-width="1" stroke-opacity="0.4" />
+    <circle cx="16" cy="14" r="4.5" fill="#10b981" class="status-dot">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="16" cy="14" r="8" fill="#10b981" opacity="0.2">
+      <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="18" class="badge-text">AI ENGINEER &amp; RESEARCHER</text>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="50" y="125" class="title">ANSHU TIWARI</text>
+
+  <!-- Subtitle -->
+  <text x="50" y="160" class="subtitle">Architecting Autonomous Systems, Neural Models &amp; Intelligent Agents</text>
+
+  <!-- Tech Focus Badges (Bottom Left) -->
+  <g transform="translate(50, 205)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="135" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
+    <text x="14" y="20" class="tag-text">⬡ Autonomous Agents</text>
+
+    <!-- Pill 2 -->
+    <rect x="145" y="0" width="138" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
+    <text x="159" y="20" class="tag-text">🧠 Large Models &amp; NLP</text>
+
+    <!-- Pill 3 -->
+    <rect x="293" y="0" width="135" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
+    <text x="307" y="20" class="tag-text">⚡ Scalable Systems</text>
+
+    <!-- Pill 4 -->
+    <rect x="438" y="0" width="125" height="32" rx="8" fill="#111c18" stroke="#10b981" stroke-width="1" stroke-opacity="0.3" />
+    <text x="452" y="20" class="tag-text">🔬 AI Research</text>
+  </g>
+
+  <!-- Architectural Neural Constellation Graph (Right Side) -->
+  <g transform="translate(620, 25)" opacity="0.9">
+    <!-- Outer Decorative Orbit Ring -->
+    <circle cx="130" cy="120" r="110" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="4 6" />
+    <circle cx="130" cy="120" r="75" fill="none" stroke="#34d399" stroke-width="1" stroke-opacity="0.2" />
+
+    <!-- Connecting Network Lines -->
+    <line x1="130" y1="120" x2="60" y2="70" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
+    <line x1="130" y1="120" x2="200" y2="75" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
+    <line x1="130" y1="120" x2="80" y2="185" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
+    <line x1="130" y1="120" x2="195" y2="175" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.4" />
+    <line x1="60" y1="70" x2="20" y2="120" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
+    <line x1="200" y1="75" x2="235" y2="135" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
+    <line x1="80" y1="185" x2="140" y2="225" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
+    <line x1="195" y1="175" x2="140" y2="225" stroke="#34d399" stroke-width="1" stroke-opacity="0.25" />
+    <line x1="60" y1="70" x2="200" y2="75" stroke="#10b981" stroke-width="0.8" stroke-opacity="0.2" stroke-dasharray="3 3" />
+
+    <!-- Node Core Glow -->
+    <circle cx="130" cy="120" r="16" fill="#10b981" opacity="0.2" />
+    <circle cx="130" cy="120" r="8" fill="#10b981" />
+    <circle cx="130" cy="120" r="4" fill="#ecfdf5" />
+
+    <!-- Peripheral Nodes -->
+    <circle cx="60" cy="70" r="6" fill="#34d399" />
+    <circle cx="60" cy="70" r="3" fill="#ffffff" />
+
+    <circle cx="200" cy="75" r="5" fill="#34d399" />
+    <circle cx="200" cy="75" r="2.5" fill="#ffffff" />
+
+    <circle cx="80" cy="185" r="6" fill="#10b981" />
+    <circle cx="80" cy="185" r="3" fill="#ffffff" />
+
+    <circle cx="195" cy="175" r="5.5" fill="#34d399" />
+    <circle cx="195" cy="175" r="2.5" fill="#ffffff" />
+
+    <circle cx="20" cy="120" r="4" fill="#059669" />
+    <circle cx="235" cy="135" r="4" fill="#059669" />
+    <circle cx="140" cy="225" r="4.5" fill="#10b981" />
+
+    <!-- Mini Label on Central Node -->
+    <text x="130" y="152" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#6ee7b7" letter-spacing="1">ARCH // CORE</text>
+  </g>
+</svg>
