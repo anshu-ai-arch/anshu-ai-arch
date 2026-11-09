@@ -9,7 +9,7 @@
 
 <!-- Real-Time Terminal Status -->
 <a href="https://github.com/anshu-ai-arch">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=2800&pause=1200&color=10B981&center=true&vCenter=true&width=780&lines=AI+Systems+Engineer+%26+Deep+Learning+Researcher+in+Biosignals;RazorOps+Autonomous+Payment+Operations+Command+Center;LangGraph+Agent+Orchestrator+%2B+CockroachDB+SHA-256+Ledger;Decoding+Multi-Lead+EEG+%26+ECG+with+Deep+Learning;Explainable+AI+(XAI)+%26+Attention+Head+Probing" alt="Terminal Status" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=19&duration=2800&pause=1200&color=10B981&center=true&vCenter=true&width=780&lines=AI+Systems+Engineer+%26+Deep+Learning+Researcher+in+Biosignals;RazorOps+Autonomous+Payment+Operations+Command+Center;MOSIP+Multi-Agent+Orbital+Safety+%26+Space+Intelligence;LangGraph+Agent+Orchestrator+%2B+CockroachDB+SHA-256+Ledger;Decoding+Multi-Lead+EEG+%26+ECG+with+Deep+Learning;Explainable+AI+(XAI)+%26+Attention+Head+Probing" alt="Terminal Status" />
 </a>
 
 <br/>
@@ -50,15 +50,15 @@
         ANSHU TIWARI &mdash; <span style="color: #10B981;">AI Systems Engineer &amp; Deep Learning Researcher in Biosignals</span>
       </h2>
       <p style="font-size: 17px; line-height: 1.6; color: #F4F4F5; margin: 0 0 20px 0;">
-        Creator of <b>RazorOps</b> (Autonomous Payment Operations Command Center with LangGraph &amp; CockroachDB) and researcher in <b>deep learning for physiological biosignals</b> (ECG cardiac telemetry &amp; multi-lead EEG neural decoding with Explainable AI).
+        Architect of <b>RazorOps</b> (Autonomous Payment Operations Command Center with LangGraph &amp; CockroachDB) and <b>MOSIP</b> (Mission Operations &amp; Space Intelligence Platform with LangGraph &amp; Qdrant RAG), and researcher in <b>deep learning for physiological biosignals</b> (clinical ECG cardiac telemetry &amp; 8-lead EEG neural decoding with Explainable AI).
       </p>
       <hr style="border: 0; border-top: 1.5px solid #30363D; margin: 18px 0;" />
       <table width="100%" style="font-size: 15px; border: none;">
         <tr>
           <td width="33%" valign="top" style="border: none; padding-right: 16px;">
             <span style="color: #10B981; font-weight: 800; font-family: monospace; font-size: 13px;">01 // AUTONOMOUS AI SYSTEMS</span><br/>
-            <b style="color: #FAF5EE; font-size: 18px;">RazorOps Command Center</b><br/>
-            <span style="color: #D4D4D8; font-size: 14px; line-height: 1.5;">LangGraph multi-agent orchestrator, real-time exception ingestion, Human-in-the-Loop policy gates, and CockroachDB SHA-256 audit logging.</span>
+            <b style="color: #FAF5EE; font-size: 18px;">RazorOps &amp; MOSIP</b><br/>
+            <span style="color: #D4D4D8; font-size: 14px; line-height: 1.5;">LangGraph supervisor architectures, real-time event ingestion, Human-in-the-Loop policy verification, and immutable SHA-256 audit ledgers.</span>
           </td>
           <td width="33%" valign="top" style="border: none; padding-right: 16px;">
             <span style="color: #F59E0B; font-weight: 800; font-family: monospace; font-size: 13px;">02 // BIOSIGNAL INTELLIGENCE</span><br/>
@@ -147,15 +147,37 @@
 <br/>
 
 <!-- ========================================================================= -->
-<!-- 05: DISTRIBUTED ORBITAL CONSTELLATION                                     -->
+<!-- 05: MOSIP — MISSION OPERATIONS & SPACE INTELLIGENCE PLATFORM              -->
 <!-- ========================================================================= -->
 
-# 05 / DISTRIBUTED ARCHITECTURE &amp; ORBITAL TELEMETRY
+# 05 / MOSIP &mdash; MISSION OPERATIONS &amp; SPACE INTELLIGENCE PLATFORM
 
 <p align="center">
-  <h3 style="font-size: 18px; color: #FAF5EE;">MOSIP DISTRIBUTED ARCHITECTURE // GLOBAL IDENTITY CONSTELLATION</h3>
-  <img src="./assets/mosip/orbital-motion.gif" alt="MOSIP Orbital Constellation Motion" width="100%" />
+  <a href="https://github.com/anshu-ai-arch/MOSIP1">
+    <img src="./assets/mosip/orbital-motion.gif" alt="MOSIP Mission Operations & Space Intelligence Platform" width="100%" />
+  </a>
 </p>
+
+<table width="100%">
+  <tr>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #38BDF8; font-size: 15px;">Stage 01: Ingestion &amp; SGP4</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">PostgreSQL satellite ephemeris ingestion, SGP4 Keplerian orbital propagation, and altitude decay tracking across LEO/MEO/GEO regimes.</span>
+    </td>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #F59E0B; font-size: 15px;">Stage 02: Conjunction Radar</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">Debris density modeling, close-encounter miss distance vectors, and automated collision probability scoring (0&ndash;100).</span>
+    </td>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #A855F7; font-size: 15px;">Stage 03: Treaty RAG</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">Qdrant vector retrieval over UN COPUOS space treaties, FCC orbital debris guidelines, and international sustainability constraints.</span>
+    </td>
+    <td width="25%" valign="top" style="padding: 12px; background: #161B22; border: 1px solid #30363D;">
+      <b style="color: #10B981; font-size: 15px;">Stage 04: Autonomous Evasion</b><br/>
+      <span style="color: #D4D4D8; font-size: 13.5px;">Optimal Delta-V burn trajectory computation, collision mitigation planning, and automated mission incident audit logging.</span>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -169,37 +191,37 @@
   <tr>
     <td width="50%" valign="top">
       <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/razorops" style="color: #10B981; font-size: 18px;">razorops</a></h3>
-      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Autonomous payment operations command center &mdash; LangGraph agent orchestrator, CockroachDB SHA-256 audit ledger, Next.js telemetry.</p>
+      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Autonomous payment operations command center &mdash; LangGraph multi-agent orchestrator, CockroachDB SHA-256 audit ledger, Next.js telemetry.</p>
       <code>LangGraph</code> &bull; <code>FastAPI</code> &bull; <code>CockroachDB</code> &bull; <code>Next.js</code>
     </td>
+    <td width="50%" valign="top">
+      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/MOSIP1" style="color: #38BDF8; font-size: 18px;">MOSIP1</a></h3>
+      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Autonomous LangGraph multi-agent orbital intelligence, satellite conjunction analysis, Qdrant regulatory RAG, and collision avoidance maneuvers.</p>
+      <code>LangGraph</code> &bull; <code>FastAPI</code> &bull; <code>PostgreSQL</code> &bull; <code>Qdrant</code>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/eeg_seizure_detection" style="color: #F59E0B; font-size: 18px;">eeg_seizure_detection</a></h3>
       <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Deep learning models for automated epileptic seizure detection from continuous multi-channel biological EEG telemetry.</p>
       <code>Deep Learning</code> &bull; <code>Biosignals</code> &bull; <code>PyTorch</code> &bull; <code>EEG</code>
     </td>
+    <td width="50%" valign="top">
+      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/gpt2_interpretability_research" style="color: #A855F7; font-size: 18px;">gpt2_interpretability_research</a></h3>
+      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Mechanistic interpretability research on GPT-2 transformers &mdash; probing attention heads, residual streams, and neural activation paths.</p>
+      <code>XAI</code> &bull; <code>Transformers</code> &bull; <code>PyTorch</code> &bull; <code>Interpretability</code>
+    </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/gpt2_interpretability_research" style="color: #38BDF8; font-size: 18px;">gpt2_interpretability_research</a></h3>
-      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Mechanistic interpretability research on GPT-2 transformers &mdash; probing attention heads, residual streams, and neural activation paths.</p>
-      <code>XAI</code> &bull; <code>Transformers</code> &bull; <code>PyTorch</code> &bull; <code>Interpretability</code>
+      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/cornflakes-copilot-" style="color: #FAF5EE; font-size: 18px;">cornflakes-copilot-</a></h3>
+      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Deterministic incident triage copilot &mdash; BM25 runbook RAG, chaos testing, policy verification, exactly-once delivery.</p>
+      <code>AI Agents</code> &bull; <code>FastAPI</code> &bull; <code>Docker</code> &bull; <code>RAG</code>
     </td>
     <td width="50%" valign="top">
       <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/hostalgrid-plus-plus" style="color: #FAF5EE; font-size: 18px;">hostalgrid-plus-plus</a></h3>
       <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Computational resource allocation modeling and grid optimization algorithms for high-throughput computing.</p>
       <code>Optimization</code> &bull; <code>Algorithms</code> &bull; <code>Jupyter</code> &bull; <code>HPC</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/MOSIP1" style="color: #10B981; font-size: 18px;">MOSIP1</a></h3>
-      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Scalable TypeScript integration for national-scale open digital identity architecture and modular services.</p>
-      <code>TypeScript</code> &bull; <code>Distributed Systems</code> &bull; <code>Identity</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3 style="margin: 0 0 8px 0;"><a href="https://github.com/anshu-ai-arch/cornflakes-copilot-" style="color: #FAF5EE; font-size: 18px;">cornflakes-copilot-</a></h3>
-      <p style="font-size: 14.5px; color: #E4E4E7; line-height: 1.5;">Deterministic incident triage copilot &mdash; BM25 runbook RAG, chaos testing, policy verification, exactly-once delivery.</p>
-      <code>AI Agents</code> &bull; <code>FastAPI</code> &bull; <code>Docker</code> &bull; <code>RAG</code>
     </td>
   </tr>
 </table>
@@ -215,7 +237,7 @@
 <div align="center">
 
 ```text
-AI Systems & Orchestration: LangGraph · FastAPI · CockroachDB · Docker · PostgreSQL · Next.js · Linux
+AI Systems & Orchestration: LangGraph · FastAPI · CockroachDB · Docker · PostgreSQL · Qdrant · Next.js · Linux
 Deep Learning & Biosignals: PyTorch · Transformers · NumPy · SciPy · Scikit-Learn · Explainable AI (SHAP / Attention)
 Tooling & Infrastructure:   Git · GitHub Actions CI/CD · Bash · Jupyter · Vector Stores · Prometheus
 ```
