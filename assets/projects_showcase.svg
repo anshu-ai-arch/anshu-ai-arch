@@ -177,20 +177,20 @@
     <text x="206" y="113" text-anchor="middle" class="tag-pine">Identity</text>
   </g>
 
-  <!-- Card 6: MedMitra (Bottom Right) -->
+  <!-- Card 6: cornflakes-copilot- (Bottom Right) -->
   <g transform="translate(446, 389)">
     <rect width="396" height="140" rx="10" fill="#FFFFFF" stroke="#D6D3CE" stroke-width="1" filter="url(#card-shadow)" />
     <rect x="0" y="0" width="4" height="140" fill="#064E3B" clip-path="url(#card-clip)" />
-    <text x="20" y="28" class="title-pine"><tspan class="emoji">🏥</tspan><tspan dx="7">MedMitra</tspan></text>
+    <text x="20" y="28" class="title-pine"><tspan class="emoji">🌽</tspan><tspan dx="7">cornflakes-copilot-</tspan></text>
     <path d="M 368 18 L 376 18 M 376 18 L 376 26 M 376 18 L 370 24" class="link-icon" />
-    <text x="20" y="52" class="proj-desc">Full-stack medical AI assistant — bridging clinical</text>
-    <text x="20" y="68" class="proj-desc">intelligence with accessible healthcare technology.</text>
+    <text x="20" y="52" class="proj-desc">Autonomous SRE &amp; incident triage copilot — deterministic</text>
+    <text x="20" y="68" class="proj-desc">tools, BM25 runbook RAG, chaos tests &amp; self-healing.</text>
     <!-- Tags -->
-    <rect x="20" y="98" width="74" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="57" y="113" text-anchor="middle" class="tag-pine">Full-Stack</text>
-    <rect x="102" y="98" width="98" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="151" y="113" text-anchor="middle" class="tag-pine">Healthcare AI</text>
-    <rect x="208" y="98" width="78" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
-    <text x="247" y="113" text-anchor="middle" class="tag-pine">Production</text>
+    <rect x="20" y="98" width="65" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="52" y="113" text-anchor="middle" class="tag-pine">FastAPI</text>
+    <rect x="93" y="98" width="80" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="133" y="113" text-anchor="middle" class="tag-pine">AI Agents</text>
+    <rect x="181" y="98" width="95" height="22" rx="4" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="0.8" />
+    <text x="228" y="113" text-anchor="middle" class="tag-pine">Docker &bull; RAG</text>
   </g>
 </svg>

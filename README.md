@@ -71,7 +71,7 @@
   <a href="https://github.com/anshu-ai-arch/500-AI-Agents-Projects"><b>🤖 500-AI-Agents-Projects</b></a> &bull;
   <a href="https://github.com/anshu-ai-arch/hostalgrid-plus-plus"><b>⚡ hostalgrid-plus-plus</b></a> &bull;
   <a href="https://github.com/anshu-ai-arch/MOSIP1"><b>🛡️ MOSIP1</b></a> &bull;
-  <a href="https://github.com/anshu-ai-arch/MedMitra"><b>🏥 MedMitra</b></a>
+  <a href="https://github.com/anshu-ai-arch/cornflakes-copilot-"><b>🌽 cornflakes-copilot-</b></a>
 </p>
 
 <br/>
