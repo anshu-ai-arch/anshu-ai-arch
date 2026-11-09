@@ -123,7 +123,9 @@
   <tr>
     <td width="50%" align="center" valign="top">
       <h3 style="font-size: 18px; color: #10B981;">ECG CARDIAC TELEMETRY // LIVE SIGNAL</h3>
-      <img src="./assets/ecg/ecg-live.gif" alt="ECG Live Signal Animation" width="100%" />
+      <a href="https://github.com/anshu-ai-arch">
+        <img src="./assets/ecg/ecg-live.gif" alt="ECG Live Signal Animation" width="100%" />
+      </a>
       <p align="left" style="font-size: 14px; color: #E4E4E7;">
         <b>Model:</b> 1D-CNN + BiLSTM &bull; <b>Lead:</b> Lead-II Diagnostic (500 Hz)<br/>
         <b>Focus:</b> Real-time P-QRS-T arrhythmia detection, heart-rate variability, and clinical telemetry.
@@ -131,7 +133,9 @@
     </td>
     <td width="50%" align="center" valign="top">
       <h3 style="font-size: 18px; color: #38BDF8;">EEG NEURAL ACTIVITY // 8-CHANNEL SCOPE</h3>
-      <img src="./assets/eeg/eeg-neural.gif" alt="EEG Neural Activity Animation" width="100%" />
+      <a href="https://github.com/anshu-ai-arch/eeg_seizure_detection">
+        <img src="./assets/eeg/eeg-neural.gif" alt="EEG Neural Activity Animation" width="100%" />
+      </a>
       <p align="left" style="font-size: 14px; color: #E4E4E7;">
         <b>Channels:</b> FP1, F3, C3, P3, O1, T3, FZ, CZ (256 Hz)<br/>
         <b>Focus:</b> Multi-channel rhythmic brainwave oscillations and highlighted focal seizure onset detection.
