@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 130" width="100%" height="100%">
   <defs>
-    <!-- Background Canvas matching GitHub Dark Mode -->
+    <!-- Background Canvas matching Midnight Ocean Space Aesthetic -->
     <linearGradient id="sub-bg-dark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#161B22" />
+      <stop offset="0%" stop-color="#0B1928" />
+      <stop offset="100%" stop-color="#10243A" />
     </linearGradient>
   </defs>
 
@@ -25,25 +25,25 @@
     .sub-desc {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-size: 12.5px;
-      fill: #A1A1AA;
+      fill: #A5B9CD;
     }
     .btn-text {
       font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.5px;
-      fill: #0D1117;
+      fill: #0B1928;
     }
   </style>
 
   <!-- Base Canvas -->
-  <rect width="880" height="130" rx="10" fill="url(#sub-bg-dark)" stroke="#30363D" stroke-width="1" />
-  <rect x="0" y="0" width="3.5" height="130" fill="#F59E0B" rx="1.75" />
+  <rect width="880" height="130" rx="10" fill="url(#sub-bg-dark)" stroke="#1E3A5F" stroke-width="1.5" />
+  <rect x="0" y="0" width="4" height="130" fill="#F59E0B" rx="2" />
 
   <!-- Left Content Block -->
   <g transform="translate(32, 28)">
-    <text x="0" y="0" class="meta-tag">05 // TECHNICAL PUBLICATIONS &amp; ESSAYS</text>
-    <text x="0" y="22" class="sub-title">The AI Architect Journal — Anshu Tiwari</text>
+    <text x="0" y="0" class="meta-tag">08 // TECHNICAL PUBLICATIONS &amp; ESSAYS</text>
+    <text x="0" y="22" class="sub-title">The AI Architect Journal &mdash; Anshu Tiwari</text>
     <text x="0" y="44" class="sub-desc">Rigorous technical breakdowns on ECG/EEG signal intelligence, mechanistic interpretability, and production agent architectures.</text>
     <text x="0" y="62" class="sub-desc" fill="#10B981">Dispatches at the intersection of biological computing and autonomous systems.</text>
   </g>
